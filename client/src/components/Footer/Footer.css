@@ -1,0 +1,15 @@
+
+  footer{
+    background-color: rgb(196, 12, 12);
+    padding-top: 1px;
+    padding-bottom: 1px;
+    opacity:.9;
+  
+  }
+  footer:hover{
+    opacity:1;
+  }
+     
+  #copyright{
+    color:#cfdfe3;
+  }

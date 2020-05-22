@@ -1,0 +1,51 @@
+  
+  #navLink{
+    float:right!important;
+    } 
+    
+    
+    #navLink:hover,
+    .navbar-item:hover{
+      background-color: #d1dee7; 
+      color:rgb(196, 12, 12);
+      text-decoration: none;
+    }
+    
+    
+    #login{
+      position:relative;
+    }
+    
+    #login:hover{
+      display:block;
+    }
+    
+    #navFixed{
+      background-color: rgb(196, 12, 12)!important;
+      color: #d1dee7!important;
+      display:block;
+      width:100%;
+      text-align:center;
+    
+    }
+  
+    
+    .card{
+      box-shadow:0 2px 5px 0 rgba(255, 0, 0, 0.16),0 2px 10px 0 rgba(255, 0, 0, 0.12);
+    }
+  
+    .small{
+      margin-right: 10px
+    }
+    
+    .show{
+      display:block!important;
+    }
+    
+    
+    @media(min-width:700px){
+      .hide-md-lg{
+        display: none
+      }
+     
+    }
