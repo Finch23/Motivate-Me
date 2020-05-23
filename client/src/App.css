@@ -1,17 +1,25 @@
 .header-color {
-  background-color: rgb(196, 12, 12)!important;
+  background: #12c2e9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+  border-bottom: black 20px;
 }
 
 .footer-color {
-  background-color: rgb(196, 12, 12)!important;
+  background: #12c2e9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+
+
 
 .mdl-layout__content {
   margin: 0;
-  padding: 0;
+  margin-top: -210px;
   font-family: sans-serif;
-  background: url(https://i.imgur.com/yr8A4dJ.jpg) no-repeat;
+  background: url(https://images.pexels.com/photos/531062/pexels-photo-531062.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat;
   background-size: cover;
   background-color: rgba(255,255,255,0.6);
-  background-blend-mode: lighten; 
+
 }
