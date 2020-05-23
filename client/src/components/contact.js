@@ -19,7 +19,7 @@ class Projects extends Component {
                 </CardTitle>
 
                 <CardText> 
-                <h3>Christian Sanchez</h3>
+                <h3 className="DevName">Christian Sanchez</h3>
                 I am a full stack web developer with experience in Sales and Health Care. As a person with a natural creativity, I have always loved exhibiting my skills in the form of music and art as a hobbie. At times, my creativity can be used in practical problem solving situations. As I began to learn about the aspects of coding, I realized that creativity and problem solving are the core elements of the career. Thus, I embarked on learning the skills need to be a proficent developer. From front end to back end, I have learned multiple of skills that lead to creating beautiful and functional applications. My journey has taken me from graduating East Carolina University in Communications, to creating proficent and dynamic applications. The road will only become more intriguing as the oppurtunites come to light and my skills are further exhibited.
                 </CardText>
 
@@ -55,7 +55,7 @@ class Projects extends Component {
                 </CardTitle>
 
                 <CardText> 
-                    <h3>Jasmin Rowdy</h3>
+                    <h3 className="DevName">Jasmin Rowdy</h3>
                 I am a North Carolina State University alumni, eighth year educator and a full stack web developer.  I am also a Google for Education Certified Trainer and I train other educators how to use Google tools in their classroom by leading local and state-level workshops. I love music, photography and painting with strong attention to detail so, naturally, front end development is my first love!  I hope to design, clean, unique and efficient sites and applications.
                 </CardText>
 
@@ -89,7 +89,9 @@ class Projects extends Component {
                 <CardTitle style={{color: '##000000', height: '260px', background: 'url(https://avatars3.githubusercontent.com/u/57788908?s=400&u=b055c58257b8c0c8ba11ee496a705ae4bc29a26b&v=4)center /contain'}}> 
                 </CardTitle>
 
-                <CardText>  <h3>Omar Ibrahim</h3> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                <CardText>  
+                    <h3 className="DevName">Omar Ibrahim</h3> 
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                 </CardText>
 
                 <CardActions border>
@@ -123,7 +125,7 @@ class Projects extends Component {
                 <CardTitle style={{color: '#fff', height: '260px', background: 'url(https://avatars0.githubusercontent.com/u/57814333?s=460&u=cbb62b2755a93573bf3414c3f92e10e8f1868368&v=4)center /auto'}}> 
                 </CardTitle>
                     <CardText>
-                    <h3>Tyler Buck</h3>
+                    <h3 className="DevName">Tyler Buck</h3>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                     </CardText>
 
@@ -160,7 +162,7 @@ class Projects extends Component {
                 </CardTitle>
 
                 <CardText> 
-                    <h3>Nicholas Finch</h3>
+                    <h3 className="DevName">Nicholas Finch</h3>
                     I had originally gotten my Associate's degree in IT from a local Community College. After little success in the job hunt, I decided to further my education with the UNC coding bootcamp. Currently, I am a server at Red Robin and have been for 2 years. Although I think writing code is a good challenge my dream job would be in music production. I love playing the piano and I am very interested in learning more instruments. I am a deeply motivated programmer, I love learning new things and continuing to challenge myself.
                 </CardText>
 
