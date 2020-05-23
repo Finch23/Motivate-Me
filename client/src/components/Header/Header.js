@@ -1,6 +1,5 @@
 import React from "react";
 import { Link} from "react-router-dom";
-
 import "./Header.css";
 
 function Header(){
@@ -15,7 +14,9 @@ const handleToggle=  () => {
 }
   return(
     <>
+    
     <div className="nav-top">
+      
       <div id="navbar">
         <button id ="navLink" className="button hide-md-lg" onClick={handleToggle} title="Toggle Navigation Menu">
           <i className="fa fa-bars"></i>

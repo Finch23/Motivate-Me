@@ -1,5 +1,5 @@
   
-  #navLink{
+#navLink{
     float:right!important;
     } 
     
@@ -49,3 +49,9 @@
       }
      
     }
+#navtop{
+  position: sticky;
+  top: 0;
+  margin-top: 0px;
+  z-index: 100; /* this is optional and should be different for every project */
+}
