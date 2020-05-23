@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-
+import './component-styles/profile-card.css'
 class Profile extends Component {
     render() {
+        
         return(
             <div class="row">
                 <div class="col s4 m4 l3">
-                    <div class="profile-card" style={{}}>
+                    <div class="profile-card">
                         <div class="top-section">
                             <i class="message fas fa-envelope"></i>
                             <i class="notif fas fa-bell"></i>
