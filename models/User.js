@@ -1,33 +1,43 @@
-const mongoose = require("mongoose");
+module.exports = (sequelize, Sequelize) => {
+  
+  const User = sequelize.define("User", {
 
-const Schema = mongoose.Schema;
+    firstname: {
+      type: Sequelize.TEXT,
+      validate: {
+        notNull: true,
+        notEmpty: true 
+      }
+    },
 
-const UserSchema = new Schema({
-  username: {
-    type: String,
-    trim: true,
-    required: "Username is Required"
-  },
+    lastname: {
+      type: Sequelize.TEXT,
+      validate: {
+        notNull: true,
+        notEmpty: true
+      }
+    },
 
-  password: {
-    type: String,
-    trim: true,
-    required: "Password is Required",
-    validate: [({ length }) => length >= 6, "Password should be longer."]
-  },
+    email: {
+      type: Sequelize.STRING,
+      validate: {
+        notNull: true,
+        notEmpty: true,
+        isEmail: true
+      }
+    },
 
-  email: {
-    type: String,
-    unique: true,
-    match: [/.+@.+\..+/, "Please enter a valid e-mail address"]
-  },
+    password: {
+      type: Sequelize.STRING,
+      validate: {
+        notNull: true,
+        notEmpty: true,
+        len: [6,20]
+      }
 
-  userCreated: {
-    type: Date,
-    default: Date.now
-  }
-});
+    }
+  })
+  // User.associate = (models) => {models.User.belongsToMany(models.Goal, {through: models.});};
 
-const User = mongoose.model("User", UserSchema);
-
-module.exports = User;
+  return User;
+}
