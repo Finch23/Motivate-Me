@@ -5,7 +5,7 @@ class Profile extends Component {
         return(
             <div class="row">
                 <div class="col s4 m4 l3">
-                    <div class="profile-card">
+                    <div class="profile-card" style={{}}>
                         <div class="top-section">
                             <i class="message fas fa-envelope"></i>
                             <i class="notif fas fa-bell"></i>
