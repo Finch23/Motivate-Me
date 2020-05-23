@@ -33,7 +33,7 @@
     height: 150px;
     margin: auto;
     margin-bottom: 20px;
-    border: 2px solid white;
+    border: 2px solid #0099F7;
     border-radius: 50%;
     padding: 8px;
     position: relative;
@@ -44,7 +44,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    border: 1px solid white;
+    border: 1px solid  #F11712;
     left: 0;
     top: 0;
     box-sizing: border-box;
