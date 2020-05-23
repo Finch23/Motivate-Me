@@ -1,14 +1,17 @@
 .header-color {
-  background: #12c2e9;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
-  border-bottom: black 20px;
+  background: #0099F7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #F11712, #0099F7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #F11712, #0099F7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+
 }
 
 .footer-color {
-  background: #12c2e9;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0099F7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #F11712, #0099F7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #F11712, #0099F7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 }
 
 
@@ -23,3 +26,29 @@
   background-color: rgba(255,255,255,0.6);
 
 }
+
+.mdl-card__supporting-text {
+  font-family: 'oxygen', sans-serif;
+  color: rgb(32, 2, 2);
+  font-size: 20;
+  padding: 5px;
+  justify-content: center;
+}
+
+span.mdl-layout-title  {
+  font-family: 'Satisfy', cursive;
+  color: rgb(32, 2, 2);
+  font-size: 45px;
+}
+
+h3.DevName {
+  font-family: 'Satisfy', cursive;
+  color: #F11712;
+  padding: 0;
+  margin: 5px;
+}
+
+
+
+
+
