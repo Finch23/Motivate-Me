@@ -16,7 +16,7 @@
 
 .mdl-layout__content {
   margin: 0;
-  margin-top: -210px;
+  /* margin-top: -210px; */
   font-family: sans-serif;
   background: url(https://images.pexels.com/photos/531062/pexels-photo-531062.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat;
   background-size: cover;
