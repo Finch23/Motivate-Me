@@ -12,17 +12,17 @@ class App extends Component {
     <Layout>
         <Header className="header-color" title="Motivate Me" scroll>
             <Navigation>
-            <Link to="/">Landing</Link>
+            <Link to="/">Home</Link>
+            <Link to="/profile">Profile</Link>
                 <Link to="/motivate">Motivate</Link>
-                <Link to="/profile">Profile</Link>
                 <Link to="/contact">Contact</Link>
             </Navigation>
         </Header>
         <Drawer title="Motivate Me">
             <Navigation>
-                <Link to="/">Landing</Link>
-                <Link to="/motivate">Motivate</Link>
+                <Link to="/">Home</Link>
                 <Link to="/profile">Profile</Link>
+                <Link to="/motivate">Motivate</Link>
                 <Link to="/contact">Contact</Link>
             </Navigation>
         </Drawer>
