@@ -14,16 +14,16 @@ class App extends Component {
             <Navigation>
             <Link to="/">Home</Link>
             <Link to="/profile">Profile</Link>
-                <Link to="/motivate">Motivate</Link>
-                <Link to="/contact">Contact</Link>
+            <Link to="/motivate">My Quotes</Link>
+            <Link to="/support">Support Group</Link>
             </Navigation>
         </Header>
-        <Drawer title="Motivate Me">
+        <Drawer className="drawer-color" title="Motivate Me">
             <Navigation>
                 <Link to="/">Home</Link>
                 <Link to="/profile">Profile</Link>
-                <Link to="/motivate">Motivate</Link>
-                <Link to="/contact">Contact</Link>
+                <Link to="/motivate">My Quotes</Link>
+                <Link to="/support">Support Group</Link>
             </Navigation>
         </Drawer>
 
@@ -34,6 +34,8 @@ class App extends Component {
 
         <div className="footer-links">
         <Footer className="footer-color">
+
+        <Link to="/contact"  style={{ color: "white", textDecoration: 'none' }}>Contact Us</Link>
             {/* Name of link */}
             <a href="#" target="_blank" rel="noopener noreferrer">
             <i className="fa fa-linkedin-square" aria-hidden="true" />
