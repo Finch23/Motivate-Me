@@ -15,8 +15,6 @@ background: linear-gradient(to left, #F11712, #0099F7); /* W3C, IE 10+/ Edge, Fi
 }
 
 
-
-
 .mdl-layout__content {
   margin: 0;
   /* margin-top: -210px; */
@@ -37,9 +35,10 @@ background: linear-gradient(to left, #F11712, #0099F7); /* W3C, IE 10+/ Edge, Fi
 
 span.mdl-layout-title  {
   font-family: 'Satisfy', cursive;
-  color: rgb(32, 2, 2);
-  font-size: 45px;
+  color: rgb(124, 230, 221);
+  font-size: 37px;
 }
+
 
 h3.DevName {
   font-family: 'Satisfy', cursive;
@@ -47,6 +46,18 @@ h3.DevName {
   padding: 0;
   margin: 5px;
 }
+
+.contacts-grid {
+  margin: 0;
+  /* margin-top: -210px; */
+  font-family: sans-serif;
+  background: url(https://images.pexels.com/photos/915972/pexels-photo-915972.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat;
+  background-size: cover;
+  background-color: rgba(255,255,255,0.6);
+}
+
+
+
 
 
 

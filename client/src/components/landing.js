@@ -5,7 +5,7 @@ import './component-styles/login.css';
 class Landing extends Component {
     render() {
         return(
-            <form class="box" action="./profile" component={Profile} method="post">
+            <form class="box" action="/profile" component={Profile} method="post">
                 <h1>Login</h1>
                     <input type="text" name="" placeholder="Username"></input>
                 <br></br>
