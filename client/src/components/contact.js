@@ -13,7 +13,7 @@ class Projects extends Component {
         return(
             <div className="projects-grid">
             {/* Christian Sanchez*/}
-            <Card shadow={5} style={{width: '620px', minWidth: '620', margin: 'auto', borderRadius: '50px'}}>
+            <Card shadow={5} style={{width: '580px', minWidth: '580', margin: 'auto', borderRadius: '50px'}}>
                 <CardTitle style={{color: '#000000', height: '260px', background: 'url(https://avatars2.githubusercontent.com/u/58318559?s=400&u=63867c02cab88408b90435182d87d4569f8095f2&v=4)center /auto'}}> 
                 
                 </CardTitle>
@@ -50,13 +50,13 @@ class Projects extends Component {
         return(
             <div className="projects-grid">
             {/*Jasmin Rowdy*/}
-            <Card shadow={5} style={{width: '600px', minWidth: '620', margin: 'auto', borderRadius: '50px'}}>
-                <CardTitle style={{color: '##000000', height: '260px', background: 'url(https://pbs.twimg.com/profile_images/1199098398206377984/oNR0wAjj_400x400.jpg)center /auto'}}> 
+            <Card shadow={5} style={{width: '580px', minWidth: '580px', margin: 'auto', borderRadius: '50px'}}>
+                <CardTitle style={{color: '##000000', height: '230px', background: 'url(https://pbs.twimg.com/profile_images/1199098398206377984/oNR0wAjj_400x400.jpg)center /auto'}}> 
                 </CardTitle>
 
                 <CardText> 
                     <h3 className="DevName">Jasmin Rowdy</h3>
-                I am a North Carolina State University alumni, eighth year educator and a full stack web developer.  I am also a Google for Education Certified Trainer and I train other educators how to use Google tools in their classroom by leading local and state-level workshops. I love music, photography and painting with strong attention to detail so, naturally, front end development is my first love!  I hope to design, clean, unique and efficient sites and applications.
+                I am a North Carolina State University alumni, eighth year educator and a full stack web developer.  I am also a Google for Education Certified Trainer and I train other educators how to use Google tools in their classroom by leading local and state-level workshops. I love music, photography and painting all with strong attention to detail so, naturally, front end development is my first love!  I hope to design, clean, unique and efficient sites/applications.
                 </CardText>
 
                 <CardActions border>
@@ -85,8 +85,8 @@ class Projects extends Component {
     } else if(this.state.activeTab === 2) {
         return( <div>
             {/* Omar Ibrahim*/}
-            <Card shadow={5} style={{width: '620px', minWidth: '620', margin: 'auto', borderRadius: '50px'}}>
-                <CardTitle style={{color: '##000000', height: '260px', background: 'url(https://avatars3.githubusercontent.com/u/57788908?s=400&u=b055c58257b8c0c8ba11ee496a705ae4bc29a26b&v=4)center /contain'}}> 
+            <Card shadow={5} style={{width: '580px', minWidth: '580px', margin: 'auto', borderRadius: '50px'}}>
+                <CardTitle style={{color: '##000000', height: '230px', background: 'url(https://avatars3.githubusercontent.com/u/57788908?s=400&u=b055c58257b8c0c8ba11ee496a705ae4bc29a26b&v=4)center /contain'}}> 
                 </CardTitle>
 
                 <CardText>  
@@ -121,8 +121,8 @@ class Projects extends Component {
     return(
         <div> 
             {/* Tyler Buck*/}
-            <Card shadow={5} style={{width: '620px', minWidth: '620', margin: 'auto', borderRadius: '50px'}}>
-                <CardTitle style={{color: '#fff', height: '260px', background: 'url(https://avatars0.githubusercontent.com/u/57814333?s=460&u=cbb62b2755a93573bf3414c3f92e10e8f1868368&v=4)center /auto'}}> 
+            <Card shadow={5} style={{width: '580px', minWidth: '580px', margin: 'auto', borderRadius: '50px'}}>
+                <CardTitle style={{color: '#fff', height: '230px', background: 'url(https://avatars0.githubusercontent.com/u/57814333?s=460&u=cbb62b2755a93573bf3414c3f92e10e8f1868368&v=4)center /auto'}}> 
                 </CardTitle>
                     <CardText>
                     <h3 className="DevName">Tyler Buck</h3>
@@ -157,8 +157,8 @@ class Projects extends Component {
         return(
             <div className="projects-grid">
             {/* Nicholas Finch*/}
-            <Card shadow={5} style={{width: '620px', minWidth: '620', margin: 'auto', borderRadius: '50px'}}>
-                <CardTitle style={{color: '##000000', height: '260px', background: 'url(https://avatars2.githubusercontent.com/u/57764795?s=460&u=4be80bacf42ba1b0d47a387ebdf1df1081456dcd&v=4)center /auto'}}> 
+            <Card shadow={5} style={{width: '580px', minWidth: '580px', margin: 'auto', borderRadius: '50px'}}>
+                <CardTitle style={{color: '##000000', height: '230px', background: 'url(https://avatars2.githubusercontent.com/u/57764795?s=460&u=4be80bacf42ba1b0d47a387ebdf1df1081456dcd&v=4)center /auto'}}> 
                 </CardTitle>
 
                 <CardText> 
@@ -203,7 +203,7 @@ class Projects extends Component {
                 </Tabs>
 
                 
-                    <Grid>
+                    <Grid className="contacts-grid">
                         <Cell col={12}>
                             <div className="content"> {this.toggleCategories()}</div>
                         </Cell>
