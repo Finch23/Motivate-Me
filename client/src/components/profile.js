@@ -4,7 +4,7 @@ class Profile extends Component {
     render() {
         
         return(
-            <div class="row">
+            <div className="profile-grid" class="row">
                 <div class="col s4 m4 l3">
                     <div class="profile-card">
                         <div class="top-section">
