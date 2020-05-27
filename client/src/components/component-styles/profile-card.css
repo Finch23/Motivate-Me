@@ -14,7 +14,8 @@
   
   .top-section{
     padding: 60px 40px;
-    background: #000000aa;
+    /* background: #000000aa; */
+    background: linear-gradient(to bottom, #0099f7, #f11712);    
   }
   
   .message,.notif{
