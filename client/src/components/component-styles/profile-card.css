@@ -1,17 +1,19 @@
-.col-6 {
-  padding-left: 10px;
-    padding-top: 10px;
-    width: 550px;
+.container{
+  width: 100%;
+  padding-top: 10px;
 }
 
-.profile-card{
-    width: 500px;
+
+/* .profile-card{
     overflow: hidden;
     text-align: center;
-    position: relative;
-    box-shadow: 0 0 10px #00000070;
+    position: absolute;
     align-items: center;
-  }
+    box-shadow: 0 0 10px #00000070;
+    width: 600px;
+    float: left;
+    
+  } */
   
   .top-section{
     padding: 60px 40px;
