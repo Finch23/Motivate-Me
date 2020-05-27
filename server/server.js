@@ -1,4 +1,3 @@
-const express = require("express");
 // Loading environmental variables here
 if (process.env.NODE_ENV !== 'production') {
 	console.log('loading dev environments');
