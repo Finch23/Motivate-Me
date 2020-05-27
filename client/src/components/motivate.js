@@ -1,7 +1,4 @@
-import React, {useState} from 'react';
-import Search from './tools/Search'
-import axios from 'axios';
-import Results from '.tools/Results'
+import React, { Component } from 'react';
 
 class Motivate extends Component {
     render() {
@@ -13,5 +10,6 @@ class Motivate extends Component {
                  </div>
         )
     }
+}
 
-export default Motivate
+export default Motivate;
