@@ -1,39 +1,22 @@
-module.exports = (sequelize, Sequelize) => {
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-    const Goal = sequelize.define("Goal", {
+const goalSchema = new Schema({
+    goaltype: { 
+        type: String 
+    },
+    goalname: { 
+        type: String 
+    },
+    goaldescription: { 
+        type: String 
+    },
+    goaldate: { 
+        type: String 
+    }
+    //Should the goal date be a string or number? -Nic
+});
 
-        goaltype: {
-            type: Sequelize.STRING,
-            validate: {
-                notEmpty: true,
-                notNull: true,
-                len: [2]
-            }
-        },
+const Goal = mongoose.model('Goal', goalSchema);
 
-        goalname: {
-            type: Sequelize.STRING,
-            validate: {
-                notEmpty: true,
-                notNull: true,
-                len: [2] 
-            }
-        },
-
-        goaldescription: {
-            type: Sequelize.STRING,
-            validate: {
-                notEmpty: true,
-                notNull: true,
-                len: [2]
-            }
-        },
-
-        goaldate: {
-            type: Sequelize.STRING
-        }
-        
-    })
-
-    return Goal;
-}
+module.exports = Goal;
