@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import './component-styles/profile-card.css'
+import './component-styles/goals.css'
+
 class Profile extends Component {
     render() {
         
         return(
             <div className="profile-grid" class="row">
-                <div class="col-6">
+                <div class="col-6 demo-grid-2">
                     <div class="profile-card">
                         <div class="top-section">
                             <i class="message fas fa-envelope"></i>
@@ -24,17 +26,20 @@ class Profile extends Component {
                             <a href="https://www.google.com"><i class="material-icons">done_all</i></a>
                         </div>
                 
-                        <div class="videos">90<span>Add Goals!</span></div>
-                        <div class="border"></div>
-                        <div class="subscribers">204<span>Completed</span></div>
-                        <div class="border"></div>
-                        <div class="views">7.3M <span>Completed</span></div>
+                            <div class="videos">90<span>Add Goals!</span></div>
+                            <div class="border"></div>
+                            <div class="subscribers">204<span>Completed</span></div>
+                            <div class="border"></div>
+                            <div class="views">7.3M <span>Completed</span></div>
                         </div>
                     </div>
+                    <div class="goals-area">
+                    <div class="goals">
+                        
+                    </div>
                 </div>
-                <div class="goals-area">
-
                 </div>
+                
             </div>
             
             

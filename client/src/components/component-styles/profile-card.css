@@ -1,6 +1,7 @@
 .col-6 {
   padding-left: 10px;
     padding-top: 10px;
+    width: 550px;
 }
 
 .profile-card{
@@ -147,4 +148,67 @@
     opacity: 0;
   }
   
-  
+  .goals-area{
+    width: 500px;
+    overflow: hidden;
+    text-align: center;
+    float: right !important;
+    
+}
+
+.goals{
+    background: #f1f1f1;
+}
+
+.container{
+  max-width: 800px;
+  margin: auto;
+margin-right: 10px;  }
+
+.txtb{
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #000;
+  background: none;
+  padding: 10px;
+  outline: none;
+  font-size: 18px;
+}
+
+h3{
+  margin: 10px 0;
+}
+
+.task{
+  width: 100%;
+  background: rgba(255,255,255,0.5);
+  padding: 18px;
+  margin: 6px 0;
+  overflow: hidden;
+}
+
+.task i{
+  float: right;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.comp .task{
+  background: rgba(0,0,0,.5);
+  color: #fff;
+}
+
+.demo-grid-ruler .mdl-cell,
+.demo-grid-1 .mdl-cell,
+.demo-grid-2 .mdl-cell,
+.demo-grid-3 .mdl-cell {
+    box-sizing: border-box;
+    background-color: #BDBDBD;
+    height: 100px;
+    padding-left: 8px;
+    padding-top: 4px;
+    color: white;
+}
+.demo-grid-ruler.demo-grid-ruler .mdl-cell {
+    height: 50px;
+}
