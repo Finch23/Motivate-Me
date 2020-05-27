@@ -1,9 +1,14 @@
+.col-6 {
+  padding-left: 10px;
+    padding-top: 10px;
+}
+
 .profile-card{
-    width: auto;
+    width: 500px;
     overflow: hidden;
     text-align: center;
     position: relative;
-    /* box-shadow: 0 0 10px #00000070; */
+    box-shadow: 0 0 10px #00000070;
     align-items: center;
   }
   

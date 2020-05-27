@@ -5,7 +5,7 @@ class Profile extends Component {
         
         return(
             <div className="profile-grid" class="row">
-                <div class="col s4 m4 l3">
+                <div class="col-6">
                     <div class="profile-card">
                         <div class="top-section">
                             <i class="message fas fa-envelope"></i>
@@ -31,6 +31,9 @@ class Profile extends Component {
                         <div class="views">7.3M <span>Completed</span></div>
                         </div>
                     </div>
+                </div>
+                <div class="goals-area">
+
                 </div>
             </div>
             
