@@ -14,7 +14,6 @@ const goalSchema = new Schema({
     goaldate: { 
         type: String 
     }
-    //Should the goal date be a string or number? -Nic
 });
 
 const Goal = mongoose.model('Goal', goalSchema);
