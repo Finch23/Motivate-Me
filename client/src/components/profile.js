@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './component-styles/profile-card.css'
 import './component-styles/goals.css'
+import { List } from 'react-mdl';
 
 class Profile extends Component {
     render() {
@@ -35,7 +36,16 @@ class Profile extends Component {
                     </div>
                     <div class="goals-area">
                     <div class="goals">
-                        
+                        <h1>Goals!</h1>
+                        <table>
+                        <List>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </List>
+                        </table>
                     </div>
                 </div>
                 </div>
