@@ -9,7 +9,7 @@ class Profile extends Component {
         
         return(
 
-            <div class="container" col={12}>
+            <div class="container">
                 <div class="row-1">
                    <div class="profile-card" col={4} style={{overflow: 'hidden', textAlign: 'center', alignItems: 'center', boxShadow: ' 0 0 10px #00000070', width: '600px', float:'left'}}>
                         <div class="top-section">
