@@ -3,7 +3,14 @@ import { Link } from 'react-router-dom';
 import { Layout, Header, Navigation, Footer, Drawer, Content } from 'react-mdl';
 import Main from './components/main';
 import './App.css';
+// import BackgroundSlideshow from 'react-background-slideshow';
 
+// import image1 from './components/assets/bike.jpg';
+// import image2 from './components/assets/code.jpg';
+// import image3 from './components/assets/jump.jpg';
+// import image4 from './components/assets/look2.jpg';
+// import image5 from './components/assets/run.jpg';
+// import image6 from './components/assets/yoga.jpg';
 
 class App extends Component {
   render () {
@@ -15,7 +22,6 @@ class App extends Component {
             <Link to="/">Home</Link>
             <Link to="/profile">Profile</Link>
             <Link to="/motivate">My Quotes</Link>
-            <Link to="/support">Support Group</Link>
             </Navigation>
         </Header>
         <Drawer className="drawer-color" title="Motivate Me">
@@ -23,12 +29,12 @@ class App extends Component {
                 <Link to="/">Home</Link>
                 <Link to="/profile">Profile</Link>
                 <Link to="/motivate">My Quotes</Link>
-                <Link to="/support">Support Group</Link>
             </Navigation>
         </Drawer>
 
         <Content>
-            <div className="page-content" />
+        {/* <BackgroundSlideshow images={[ image1, image2, image3, image4, image5, image6 ]} /> */}
+        <div className="page-content" />
             <Main/>
         </Content>
 
@@ -38,13 +44,12 @@ class App extends Component {
         <Link to="/contact"  style={{ color: "white", textDecoration: 'none' }}>Contact Us</Link>
             {/* Name of link */}
             <a href="#" target="_blank" rel="noopener noreferrer">
-            <i className="fa fa-linkedin-square" aria-hidden="true" />
             </a>
 
-         {/* Name of Link */}
-        <a href="#" target="_blank" rel="noopener noreferrer">
-        <i className="fa fa-github-square" aria-hidden="true"  />
-        </a>
+            {/* Name of Link */}
+            <a href="#" target="_blank" rel="noopener noreferrer">
+            </a>
+
         </Footer>
         </div>
       

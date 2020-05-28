@@ -5,6 +5,7 @@
     position: relative;
     /* box-shadow: 0 0 10px #00000070; */
     align-items: center;
+    box-shadow: -2rem 2rem 2rem rgba(0, 0, 0, 0.2);
   }
   
   .top-section{
@@ -17,7 +18,7 @@
     top: 40px;
     font-size: 20px;
     cursor: pointer;
-    color: #ffffff50;
+    color: #82fbf1fb;
   }
   
   .message{
@@ -67,7 +68,7 @@
   
   .name{
     color: #f1f1f1;
-    font-size: 28px;
+    font-size: 20px;
     letter-spacing: 2px;
     text-transform: uppercase;
   }
@@ -101,6 +102,14 @@
     font-size: 14px;
     display: block;
   }
+  
+  h1.goaltitle {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    color: whitesmoke;
+    padding: 10px;
+  }
+
   
   .social-media{
     position: absolute;
