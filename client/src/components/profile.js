@@ -9,9 +9,9 @@ class Profile extends Component {
         
         return(
 
-            <div class="container">
+            <div class="wrapper">
                 <div class="row-1">
-                   <div class="profile-card" col={4} style={{overflow: 'hidden', textAlign: 'center', alignItems: 'center', boxShadow: ' 0 0 10px #00000070', width: '600px', float:'left'}}>
+                   <div class="profile-card">
                         <div class="top-section">
                             <i class="message fas fa-envelope"></i>
                             <i class="notif fas fa-bell"></i>
@@ -36,12 +36,9 @@ class Profile extends Component {
                             <div class="views">7.3M <span>Completed</span></div>
                         </div>
                     </div> 
-                </div>
                 
-
-                <div class="row-2">
-                    <div>
-                        <List style={{width: '300px'}}>
+                    <div class="row-2">
+                        <List>
                             <ListItem twoLine>
                                 <ListItemContent avatar="person" subtitle="62 episodes">Bryan Cranston</ListItemContent>
                                 <ListItemAction info="Actor">
@@ -61,7 +58,32 @@ class Profile extends Component {
                                 </ListItemAction>
                             </ListItem>
                         </List>
-                    </div>
+                </div>
+
+                </div>
+                
+
+                <div class="row-2">
+                        <List>
+                            <ListItem twoLine>
+                                <ListItemContent avatar="person" subtitle="62 episodes">Bryan Cranston</ListItemContent>
+                                <ListItemAction info="Actor">
+                                <a href="https://www.google.com"><Icon name="star" /></a>
+                                </ListItemAction>
+                            </ListItem>
+                            <ListItem twoLine>
+                                <ListItemContent avatar="person" subtitle="62 episodes">Aaron Paul</ListItemContent>
+                                <ListItemAction>
+                                <a href="https://www.google.com"><Icon name="star" /></a>
+                                </ListItemAction>
+                            </ListItem>
+                            <ListItem twoLine>
+                                <ListItemContent avatar="person" subtitle="62 episodes">Bob Odenkirk</ListItemContent>
+                                <ListItemAction>
+                                <a href="https://www.google.com"><Icon name="star" /></a>
+                                </ListItemAction>
+                            </ListItem>
+                        </List>
                 </div>                   
             </div>
 
