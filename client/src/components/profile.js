@@ -4,10 +4,10 @@ class Profile extends Component {
     render() {
         
         return(
-            <div className="profile-grid" class="row">
-                <div class="col s4 m4 l3">
-                    <div class="profile-card">
-                        <div class="top-section">
+            <div className="profile-grid zindex1" class="row">
+                <div className="col s4 m4 l3 z index1">
+                    <div className="profile-card zindex1">
+                        <div className="top-section">
                             <i class="message fas fa-envelope"></i>
                             <i class="notif fas fa-bell"></i>
                         <div class="pic">
