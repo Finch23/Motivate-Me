@@ -51,11 +51,19 @@ h3.DevName {
   margin: 0;
   /* margin-top: -210px; */
   font-family: sans-serif;
-  background: url(https://images.pexels.com/photos/915972/pexels-photo-915972.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat;
   background-size: cover;
   background-color: rgba(255,255,255,0.6);
 }
 
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.zindex1{
+  z-index: 1000;
+ 
+}
 
 
 
