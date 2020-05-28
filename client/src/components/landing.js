@@ -46,12 +46,29 @@ class Landing extends Component {
               
                 <form className="box zindex1" action="/profile" component={Profile} method="post">
                 <h1 className="goaltitle zindex1">Login</h1>
-                    <input type="text" name="" placeholder="Username"></input>
+                    <input type="text"
+                        name="" 
+                        placeholder="Username"  
+                        value={this.state.username}
+                        onChange={this.handleChange}>
+                    </input>
                 <br></br>
-                    <input type="password" name="" placeholder="Password"></input>
+
+                    <input type="password" 
+                        name="" 
+                        placeholder="Password"
+                        value={this.state.password}
+                        onChange={this.handleChange}>
+                    </input>
                 <br></br>
-                    <input type="submit" name="" value="GO!"></input>
+
+                    <input onClick={this.handleSubmit} 
+                        type="submit" 
+                        name="" 
+                        value="GO!">
+                    </input>
                 <br></br>
+                
                 <Link to="/signup">New? Register!</Link>
             </form>
             <BackgroundSlideshow images={[ image1, image2, image3, image4, image5, image6 ]} />
