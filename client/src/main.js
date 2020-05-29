@@ -1,11 +1,11 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import Contact from './contact';
-import Landing from './landing';
-import Motivate from './motivate';
-import Profile from './profile';
-import Signup from './signup';
+import Contact from './pages/Contact';
+import Landing from './pages/Landing';
+import Motivate from './pages/Motivate';
+import Profile from './pages/Profile';
+import Signup from './pages/Signup';
 
 
 const Main = () => (
