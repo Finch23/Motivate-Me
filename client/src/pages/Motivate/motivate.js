@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import GoalsModal from '../../components/GoalsModal';
 import "./Motivate.css";
-import Profile from '../Profile/Profile';
+import Profile from '../Profile/profile';
 
 
 
