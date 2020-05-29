@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {List} from 'react-mdl';
-import './component-styles/profile-card.css';
+import '../pages/Profile/Profile.css';
 class ProfileCard extends Component {
     render() {
         

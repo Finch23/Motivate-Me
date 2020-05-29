@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { List, ListItem, ListItemContent, ListItemAction, Icon } from 'react-mdl';
-import './component-styles/profile-card.css';
+import '../pages/Profile/Profile.css';
 class GoalsList extends Component {
     render() {
         

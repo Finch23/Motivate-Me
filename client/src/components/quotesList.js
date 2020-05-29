@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { List, ListItem, ListItemContent, ListItemAction, Checkbox } from 'react-mdl';
-import './component-styles/profile-card.css';
+import '../pages/Profile/Profile.css';
 class QuotesList extends Component {
     render() {
         

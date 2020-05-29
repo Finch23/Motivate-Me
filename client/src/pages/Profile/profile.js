@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import {} from 'react-mdl'
-import './component-styles/profile-card.css'
-import ProfileCard from './profileCard';
-import GoalsList from './goalsList';
-import SearchQuotes from './searchQuotes';
-import QuotesList from './quotesList';
+import '../Profile/Profile.css'
+import ProfileCard from '../../components/profileCard';
+import GoalsList from '../../components/goalsList';
+import SearchQuotes from '../../components/searchQuotes';
+import QuotesList from '../../components/quotesList';
 
 class Profile extends Component {
     render() {

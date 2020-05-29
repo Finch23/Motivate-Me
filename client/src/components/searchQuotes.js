@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {List, Textfield} from 'react-mdl';
-import './component-styles/profile-card.css';
+import '../pages/Profile/Profile.css';
 class SearchQuotes extends Component {
     render() {
         
