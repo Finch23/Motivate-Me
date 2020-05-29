@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
 import { Link } from 'react-router-dom';
-import Profile from './profile';
+import Profile from '../Profile/profile';
 import './component-styles/login.css';
 import BackgroundSlideshow from 'react-background-slideshow';
 

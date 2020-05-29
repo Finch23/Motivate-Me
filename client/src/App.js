@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Layout, Header, Navigation, Footer, Drawer, Content } from 'react-mdl';
 import Main from './components/main';
 import './App.css';
+import AUTH from '.utils/AUTH'
 // import BackgroundSlideshow from 'react-background-slideshow';
 
 // import image1 from './components/assets/bike.jpg';
