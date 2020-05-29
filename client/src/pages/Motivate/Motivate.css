@@ -1,0 +1,207 @@
+.header-color {
+  background: #0099F7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #F11712, #0099F7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #F11712, #0099F7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+
+}
+
+.footer-color {
+  background: #0099F7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #F11712, #0099F7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #F11712, #0099F7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+
+.mdl-layout__content {
+  margin: 0;
+  /* margin-top: -210px; */
+  font-family: sans-serif;
+  background: url(https://images.pexels.com/photos/531062/pexels-photo-531062.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat;
+  background-size: cover;
+  background-color: rgba(255,255,255,0.6);
+
+}
+
+.mdl-card__supporting-text {
+  font-family: 'oxygen', sans-serif;
+  color: rgb(32, 2, 2);
+  font-size: 20;
+  padding: 5px;
+  justify-content: center;
+}
+
+span.mdl-layout-title  {
+  font-family: 'Satisfy', cursive;
+  color: rgb(124, 230, 221);
+  font-size: 37px;
+}
+
+
+h3.DevName {
+  font-family: 'Satisfy', cursive;
+  color: #F11712;
+  padding: 0;
+  margin: 5px;
+}
+
+.contacts-grid {
+  margin: 0;
+  /* margin-top: -210px; */
+  font-family: sans-serif;
+  background-size: cover;
+  background-color: rgba(255,255,255,0.6);
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.zindex1{
+  z-index: 1000;
+ 
+}
+.box {
+  width: 400px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.box h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.box input[type = "text"],.box input[type = "password"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+  width: 280px;
+  border-color: #2ecc71;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.box input[type = submit] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s; 
+}
+
+.brand-logo:hover {
+  color: black;
+}
+
+.box input[placeholder]{
+    color: white;
+}
+
+
+.modal {
+  width: 500px;
+  transition: 2.1s ease-out;
+  filter: blur(0);
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 200px;
+  margin-left: 160px;
+}
+.modal.off {
+  opacity: 0;
+  visibility: hidden;
+  filter: blur(8px);
+  transform: scale(0.33);
+  box-shadow: 1rem 0 0 rgba(0, 0, 0, 0.2);
+}
+/* @supports (offset-rotation: 0deg) {
+  offset-rotation: 0deg;
+  offset-path: path("M 250,100 S -300,500 -700,-200");
+  .modal.off {
+    offset-distance: 100%;
+  }
+} */
+@media (prefers-reduced-motion) {
+  .modal {
+    offset-path: none;
+  }
+}
+.modal h2 {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+  margin: 0;
+}
+.modal .content {
+  padding: 1rem;
+}
+.modal .actions {
+  border-top: 1px solid #ccc;
+  background: #eee;
+  padding: 0.5rem 1rem;
+}
+.modal .actions button {
+  border: 0;
+  background: #78f89f;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  line-height: 1;
+}
+#centered-toggle-button {
+  position: absolute;
+}
+
+input.input-text {
+    font-size: inherit;
+}
+
+::placeholder {
+    color: rgb(172, 231, 218);
+    opacity: 1;
+}
+
+form.box {
+    border-radius: 75px;
+    padding: 15px;
+}
+
+
+
+
+
+

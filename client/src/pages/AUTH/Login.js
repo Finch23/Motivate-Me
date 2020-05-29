@@ -1,19 +1,20 @@
 import React, { Component} from 'react';
 import { Link } from 'react-router-dom';
-import Profile from '../Profile/profile';
-import './component-styles/login.css';
+import Profile from '../Profile/Profile';
+import './Login.css';
 import BackgroundSlideshow from 'react-background-slideshow';
 
-import image1 from '../components/assets/bike.jpg';
-import image2 from '../components/assets/code.jpg';
-import image3 from '../components/assets/jump.jpg';
-import image4 from '../components/assets/look2.jpg';
-import image5 from '../components/assets/run.jpg';
-import image6 from '../components/assets/yoga.jpg';
+
+import image1 from './assets/bike.jpg';
+import image2 from './assets/code.jpg';
+import image3 from './assets/jump.jpg';
+import image4 from './assets/look2.jpg';
+import image5 from './assets/run.jpg';
+import image6 from './assets/yoga.jpg';
 
 
 
-class Landing extends Component {
+class Login extends Component {
 
     constructor() {
         super();
@@ -78,4 +79,4 @@ class Landing extends Component {
     }
 }
 
-export default Landing;
+export default Login;
