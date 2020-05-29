@@ -1,1 +1,1 @@
-export { default } from "./GoalsModal";
+export { default } from "./goalsModal";

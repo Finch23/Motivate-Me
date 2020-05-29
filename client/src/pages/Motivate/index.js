@@ -1,1 +1,1 @@
-export { default } from "./Motivate";
+export { default } from "./motivate";
