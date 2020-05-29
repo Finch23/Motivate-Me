@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "./modal.css";
 
 class GoalsModal extends Component {
     render() {
@@ -7,7 +8,7 @@ class GoalsModal extends Component {
         }
         return (
             <div>
-              <div className="modal">{this.props.children}</div>
+              <div className="Modal">{this.props.children}</div>
              
             </div>
           );

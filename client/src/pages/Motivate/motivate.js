@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import GoalsModal from '../../components/GoalsModal/goalsModal';
-import "./modal.css";
-import "../App.css";
-import Profile from './profile';
-import './component-styles/login.css';
+import GoalsModal from '../../components/GoalsModal';
+import "./Motivate.css";
+import Profile from '../Profile/profile';
+
 
 
 class Motivate extends Component {
