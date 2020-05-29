@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Redirect, Link } from 'react-router-dom';
 import AUTH from '../../utils/AUTH';
-import Profile from '../Profile/profile';
+import Profile from '../Profile/Profile';
 
 class Signup extends Component {
 
