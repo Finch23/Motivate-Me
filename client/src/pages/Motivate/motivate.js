@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import GoalsModal from './goalsModal';
+import GoalsModal from '../../components/GoalsModal/goalsModal';
 import "./modal.css";
 import "../App.css";
 import Profile from './profile';
