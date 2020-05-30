@@ -1,5 +1,6 @@
 import React, { Component} from 'react';
 import { Link } from 'react-router-dom';
+import AUTH from '../../utils/AUTH';
 import Profile from '../Profile/profile';
 import './Login.css';
 import BackgroundSlideshow from 'react-background-slideshow';
@@ -45,10 +46,10 @@ class Login extends Component {
         return(
             <div className="zindex1"> 
               
-                <form className="box zindex1" action="/profile" component={Profile} method="post">
+                <form className="box zindex1" action="/profile" method="post">
                 <h1 className="goaltitle zindex1">Login</h1>
                     <input type="text"
-                        name="" 
+                        name="username" 
                         placeholder="Username"  
                         value={this.state.username}
                         onChange={this.handleChange}>
@@ -56,7 +57,7 @@ class Login extends Component {
                 <br></br>
 
                     <input type="password" 
-                        name="" 
+                        name="password" 
                         placeholder="Password"
                         value={this.state.password}
                         onChange={this.handleChange}>

@@ -35,7 +35,7 @@ class Signup extends Component {
     }).then(response => {
       console.log(response);
       if (!response.data.errmsg) {
-        console.log('youre good');
+        console.log('Confirmed');
         this.setState({
           redirectTo: '/'
         });
@@ -54,43 +54,48 @@ class Signup extends Component {
       <div className="login">
           <form className="box" action="/profile" component={Profile} method="post">
                 <h1 className="goaltitle">Register for Motivate Me!</h1>
-                <label htmlFor="username">First name: </label>
+               
                 <input
                   type="text"
                   name="firstName"
+                  placeholder="First Name"
                   value={this.state.firstName}
                   onChange={this.handleChange}>
                 </input>
           
-                <label htmlFor="username">Last name: </label>
+                
                 <input
                   type="text"
                   name="lastName"
+                  placeholder="Last Name"
                   value={this.state.lastName}
                   onChange={this.handleChange}>                      
                 </input>                
 
-                <label htmlFor="username">Username: </label>
+                
                 <input
                   type="text"
                   name="username"
+                  placeholder="Username"
                   value={this.state.username}
                   onChange={this.handleChange}>
                 </input>
 
-                <label htmlFor="password">Password: </label>
+                
                 <input
                   type="password"
                   name="password"
+                  placeholder="Password"
                   value={this.state.password}
                   onChange={this.handleChange}>
                   </input>
 
                 
-                <label htmlFor="confirmPassword">Confirm Password: </label>
+                
                 <input
                   type="password"
                   name="confirmPassword"
+                  placeholder="Confirm Password"
                   value={this.state.confirmPassword}
                   onChange={this.handleChange}>
                   </input>
