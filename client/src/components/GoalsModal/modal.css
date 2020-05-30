@@ -59,10 +59,15 @@
 
 input.input-text {
     font-size: inherit;
+    color: black;
+}
+
+input.findquote{
+  color: black;color: black;
 }
 
 ::placeholder {
-    color: rgb(172, 231, 218);
+    color: black;
     opacity: 1;
 }
 

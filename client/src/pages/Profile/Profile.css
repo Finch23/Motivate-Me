@@ -152,8 +152,8 @@
   }
   
 
-   .quotesSearch, .quotesList {
-    background-color: rgb(135, 203, 245);
+   .quotesSearch {
+    background-color: rgb(135, 203, 245, .9);
     opacity: 3;
     box-shadow: 0 0 10px #00000070;
     border-radius: 10px;
@@ -161,13 +161,24 @@
     margin: 15px;
   }
 
-  .goalsList {
-    background-color: rgb(135, 203, 245);
+  .quotesList{
+    background-color: rgb(135, 203, 245, .9);
     opacity: 3;
     box-shadow: 0 0 10px #00000070;
     border-radius: 10px;
     padding: 5px;
+    margin: 15px;
+    margin-right: 5px;
+  }
+
+  .goalsList {
+    background-color: rgb(135, 203, 245, .9);
+    opacity: 10;
+    box-shadow: 0 0 10px #00000070;
+    border-radius: 50px;
+    padding: 5px;
     margin-top: 2px;
+    height: 408px;
   }
   
   .findquote {
@@ -176,10 +187,32 @@
     color: black;
   }
 
+  input.findquote {
+    color: black;
+  }
+
   .button {
-    background-color: #b71c1c;
+    /* background-color: #b71c1c;
     color: whitesmoke;
     font-weight: bolder;
     padding: 5px;
-    height: 30px;
+    height: 30px; */
+    display: inline-block;
+    padding: 0.3em 1.2em;
+    margin: 0 0.3em 0.3em 0;
+    margin-left: 5px;
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    background-color:#4eb5f1;
+    text-align:center;
+    transition: all 0.2s;
+  }
+
+  .button:hover{
+    /* background-color:#4095c6; */
+    border-color: rgba(255,255,255,1);
   }
