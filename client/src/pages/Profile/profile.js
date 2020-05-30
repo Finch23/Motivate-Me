@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {} from 'react-mdl'
+import { Cell, Grid } from 'react-mdl'
 import '../Profile/Profile.css'
 import ProfileCard from '../../components/profileCard';
 import GoalsList from '../../components/goalsList';
@@ -11,16 +11,21 @@ class Profile extends Component {
         
         return(
             <div className="container">
-                <div className="row-1">
-                    <div className="profileCard">
-                        <ProfileCard/>
+                <Grid>
+                    <div className="row-1">
+                        <Cell col={6}>
+                            <div className="profileCard">
+                                <ProfileCard/>
+                            </div>
+                        </Cell>
+                        <Cell col={6}>
+                            <div className="goalsList">
+                                <GoalsList/>
+                            </div>
+                        </Cell>
                     </div>
+                </Grid>
                 
-                    <div className="goalsList">
-                        <GoalsList/>
-                    </div>
-                
-                </div>
 
                 <div className="row-2">
                     <div className="quotesSearch">

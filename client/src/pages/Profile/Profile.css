@@ -1,5 +1,5 @@
 .profile-card{
-    width: auto;
+    width: 600px;
     overflow: hidden;
     text-align: center;
     position: relative;
@@ -150,4 +150,10 @@
     opacity: 0;
   }
   
-  
+.goalsList{
+  float: right;
+}
+
+.row-1{
+  width: 100%;
+}
