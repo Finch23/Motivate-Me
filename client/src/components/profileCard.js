@@ -34,20 +34,7 @@ class ProfileCard extends Component {
                         </div>
                     </div>
 
-                    <div class="goals-area">
-                        <div class="goals">
-                            <h1>Goals!</h1>
-                                <table>
-                                    <List>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                    </List>
-                                </table>
-                        </div>
-                    </div>
+                
                 </div>
                 
             </div>
