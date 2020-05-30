@@ -11,7 +11,7 @@ module.exports = {
     }
   },
   register: (req, res) => {
-    const { firstName, lastName, email, password } = req.body;
+    const { firstName, lastName, username, password } = req.body;
     db.User.findOne({ 'username': username }, (err, userMatch) => {
       if (userMatch) {
         return res.json({
