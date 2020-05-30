@@ -15,7 +15,7 @@ module.exports = {
     db.User.findOne({ 'username': username }, (err, userMatch) => {
       if (userMatch) {
         return res.json({
-          error: `Sorry ${username} has been taken: ${username}`
+          error: `Sorry username has been taken!`
         });
       }
       const newUser = new db.User({

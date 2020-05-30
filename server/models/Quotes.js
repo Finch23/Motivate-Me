@@ -1,24 +1,24 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const quoteSchema = new Schema({
-    quotetitle: { 
+const quotesSchema = new Schema({
+    quotestitle: { 
         type: String 
     },
-    quoteauthor: { 
+    quotesauthor: { 
         type: String 
     },
-    quoteurl: { 
+    quotesurl: { 
         type: String 
     },
-    quotemedia: { 
+    quotesmedia: { 
         type: String 
     },
-    quotecategory: { 
+    quotescategory: { 
         type: String 
     }
 });
 
-const Quote = mongoose.model('Quote', quoteSchema);
+const Quotes = mongoose.model('Quotes', quotesSchema);
 
-module.exports = Quote;
+module.exports = Quotes;
