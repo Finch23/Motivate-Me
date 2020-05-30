@@ -35,7 +35,7 @@ class Signup extends Component {
     }).then(response => {
       console.log(response);
       if (!response.data.errmsg) {
-        console.log('youre good');
+        console.log('Confirmed');
         this.setState({
           redirectTo: '/'
         });

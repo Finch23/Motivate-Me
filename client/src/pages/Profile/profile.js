@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Cell, Grid } from 'react-mdl'
+import { Grid, Cell } from 'react-mdl';
 import '../Profile/Profile.css'
 import ProfileCard from '../../components/profileCard';
 import GoalsList from '../../components/goalsList';
@@ -7,40 +7,33 @@ import SearchQuotes from '../../components/searchQuotes';
 import QuotesList from '../../components/quotesList';
 
 class Profile extends Component {
-    render() {
-        
+    
+    render() { 
         return(
-            <div className="container">
+            <div>
                 <Grid>
-                    <div className="row-1">
-                        <Cell col={6}>
-                            <div className="profileCard">
-                                <ProfileCard/>
-                            </div>
-                        </Cell>
-                        <Cell col={6}>
-                            <div className="goalsList">
-                                <GoalsList/>
-                            </div>
-                        </Cell>
-                    </div>
+                    <Cell col={5}>
+                    <div className="profileCard"> <ProfileCard/> </div>
+                    </Cell>
+                         
+                    <Cell col={7}> <div className="goalsList"> <GoalsList/> </div> 
+                    </Cell>
+
                 </Grid>
-                
 
-                <div className="row-2">
-                    <div className="quotesSearch">
-                        <SearchQuotes/>
-                    </div>
+                <Grid>
+                    <Cell col={3}>  <div className="quotesSearch"> <SearchQuotes/> </div>
+                    </Cell>
 
-                    <div className="quotesList">
-                        <QuotesList/>
-                    </div>
-                </div>
-            </div>
-        )
-            
+                    <Cell col={9}>  <div className="quotesList"> <QuotesList/>  </div> 
+                    </Cell>
+
+                </Grid>
+               </div>     
+        )     
             
     }
 }
 
 export default Profile;
+
