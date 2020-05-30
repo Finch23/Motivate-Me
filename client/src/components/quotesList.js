@@ -5,14 +5,19 @@ class QuotesList extends Component {
     render() {
         
         return(
-            <List style={{width: '300px'}}>
+            <div>
+            <h3 className="DevName" align="center">Quotes</h3>
+<           hr></hr>
+            <h4 align="center"> No quotes to display</h4>
+            {/* <List style={{width: '300px'}}>
                 <ListItem>
-                    <ListItemContent avatar="person">Bryan Cranston</ListItemContent>
+                    <ListItemContent avatar="">No Quotes to Display</ListItemContent>
                     <ListItemAction>
                     <Checkbox defaultChecked />
                     </ListItemAction>
                 </ListItem>
-            </List>
+            </List> */}
+            </div>
         )
             
             
