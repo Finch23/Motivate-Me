@@ -26,7 +26,7 @@ app.use(session({
   saveUninitialized: false
 }));
 
-//Build folder was added. DELETE THIS CODE LATER
+// test change
 
 // Passport
 app.use(passport.initialize());
@@ -51,5 +51,5 @@ app.use(function(err, req, res, next) {
 
 // Starting Server
 app.listen(PORT, () => {
-  console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
+  console.log(`API Server now listening on PORT ${PORT}!`);
 });
