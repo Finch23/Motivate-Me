@@ -1,38 +1,46 @@
 import React, { Fragment } from "react";
 import { Link } from 'react-router-dom';
-import { Col } from '../Grid';
-import './Nav.css';
+import { Layout, Header, Navigation, Footer, Drawer, Content } from 'react-mdl';
+
 
 const Nav = (props) => {
   let greeting;
 
   if (props.user === null) {
-		greeting = <p>Hello guest</p>
+		greeting = <p>Hello Guest</p>
 	} else if (props.user.firstName) {
 		greeting = (
-			<Fragment>
-				Welcome back, <strong>{props.user.firstName}</strong>
+			<Fragment  >
+				Welcome, <strong>{props.user.firstName}</strong>
 			</Fragment>
 		)
 	} else if (props.user.username) {
 		greeting = (
 			<Fragment>
-				Welcome back, <strong>{props.user.username} </strong>
+				Welcome, <strong>{props.user.username} </strong>
 			</Fragment>
 		)
   }
   
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-success">
-      <Col size="md-6 sm-6">
-        <Link to="/" className="navbar-brand">React Reading List With Auth</Link>
-      </Col>
-      <Col size="md-6 sm-6">
-        <div className="float-right">
-        {greeting} - <Link to="#" className="logout" onClick={props.logout}>Logout</Link>
-        </div>
-      </Col>
-    </nav>
+    <div className="demo-big-content">
+      <Layout className="mdl-layout__content"> 
+          <Header className="header-color" title="Motivate Me" scroll>
+
+          <Navigation>
+          {/* <Link to="/">Home</Link> */}
+          <Link to="/profile">Profile</Link>
+          <Link to="/quotes">My Quotes</Link>
+              <div className="float-right">
+                    {greeting}&emsp;&emsp;  
+                  <a href="/" className="logout" style={{color:"white"}} onClick={props.logout}>Logout</a>
+              </div>
+          </Navigation>
+        </Header>
+
+        </Layout>
+     </div>
+
   )
 };
 

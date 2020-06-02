@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {List} from 'react-mdl';
 import '../pages/Profile/Profile.css';
 class ProfileCard extends Component {
     render() {
