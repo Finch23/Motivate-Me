@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { List, ListItem, ListItemContent, ListItemAction, Icon } from 'react-mdl';
+import { Row, Col } from "../Grid";
 import '../pages/Profile/Profile.css';
 // import Motivate from '../pages/Motivate/motivate';
 class GoalsList extends Component {
