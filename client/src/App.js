@@ -13,7 +13,7 @@ import AUTH from './utils/AUTH';
 import { Footer, Content, Header, Navigation, Drawer, Layout} from 'react-mdl';
 
 
-class App1 extends Component {
+class App extends Component {
   
 	constructor() {
 	  super();
@@ -110,4 +110,4 @@ class App1 extends Component {
 	  }
   }
   
-  export default App1;
+  export default App;
