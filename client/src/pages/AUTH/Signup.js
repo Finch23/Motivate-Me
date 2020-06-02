@@ -1,7 +1,17 @@
 import React, { Component } from 'react';
 import { Redirect, Link } from 'react-router-dom';
 import AUTH from '../../utils/AUTH';
-import Profile from '../Profile/profile';
+
+import BackgroundSlideshow from 'react-background-slideshow';
+
+
+import image1 from './assets/bike.jpg';
+import image2 from './assets/code.jpg';
+import image3 from './assets/jump.jpg';
+import image4 from './assets/look2.jpg';
+import image5 from './assets/run.jpg';
+import image6 from './assets/yoga.jpg';
+
 
 class Signup extends Component {
 
@@ -26,7 +36,6 @@ class Signup extends Component {
   
 	handleSubmit = (event) => {
 		event.preventDefault();
-		// TODO - validate!
 		AUTH.signup({
       firstName: this.state.firstName,
       lastName: this.state.lastName,
@@ -52,7 +61,7 @@ class Signup extends Component {
     
 		return (
       <div className="login">
-          <form className="box" action="/profile" component={Profile} method="post">
+          <form className="box zindex1" action="/profile"  method="post">
                 <h1 className="goaltitle">Register for Motivate Me!</h1>
                
                 <input
@@ -101,11 +110,11 @@ class Signup extends Component {
                   </input>
               
                 <br></br>
-                <button onClick={this.handleSubmit}>Register</button>
+                <button className="input-text" onClick={this.handleSubmit}>Register</button>
                 <br></br>
                 <Link to="/">Login</Link>
               </form>
-
+              <BackgroundSlideshow images={[ image1, image2, image3, image4, image5, image6 ]} />
       </div>
 		)
 	}

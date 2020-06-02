@@ -8,7 +8,7 @@ class SearchQuotes extends Component {
             <div>
                 <h3 className="DevName" align="center"> Search for Quotes</h3>
                 <hr></hr>
-               <input className="findquote" type="text" placeholder="Motivate me in..." name="Quote" ></input>
+               <input className="findquote" style={{borderRadius: "50px", padding: "5px"}} type="text" placeholder="Motivate me in..." name="Quote" ></input>
                <button className="button" onClick={this.handleSubmit}> Search! </button>
                <br></br>
                <br></br>

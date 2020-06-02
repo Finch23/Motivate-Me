@@ -1,47 +1,28 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { List, ListItem, ListItemContent, ListItemAction, Icon } from 'react-mdl';
 import '../pages/Profile/Profile.css';
-import Motivate from '../pages/Motivate/motivate';
+// import Motivate from '../pages/Motivate/motivate';
 class GoalsList extends Component {
     render() {
         
         return(
-            <div>
+            <div className="goalsList">
                 <h3 className="DevName" align="center">My Goals</h3>
                 <hr></hr>
             <List>
                 <ListItem twoLine>
                     <ListItemContent avatar="" >Look for a new job</ListItemContent>
                     <ListItemAction info="">
-                    <a href="#"><Icon name="X" /></a>
-                    </ListItemAction>
-                </ListItem>
-
-                <ListItem twoLine>
-                    <ListItemContent avatar="" >Learn Python!</ListItemContent>
-                    <ListItemAction info="">
-                    <a href="#"><Icon name="X" /></a>
-                    </ListItemAction>
-                </ListItem>
-
-                <ListItem twoLine>
-                    <ListItemContent avatar="" >Study React on FreeCodeCamp</ListItemContent>
-                    <ListItemAction info="">
-                    <a href="#"><Icon name="X" /></a>
-                    </ListItemAction>
-                </ListItem>
-
-                <ListItem twoLine>
-                    <ListItemContent avatar="" >Exercise 4x a week</ListItemContent>
-                    <ListItemAction info="">
-                    <a href="#"><Icon name="X" /></a>
+                    <a href="google.com"><Icon name="X" /></a>
                     </ListItemAction>
                 </ListItem>
                 
 
-                {/* Add a New Goal Modal */}
                 <div>
-                <Motivate/>
+                <form method="get" action="/addquote">
+                    <button className="button" style={{float: "right", marginRight: "60px"}} type="submit">Add New Goal</button>
+                </form>
                  </div>
             </List>
             </div>
