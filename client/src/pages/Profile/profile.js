@@ -5,6 +5,7 @@ import ProfileCard from '../../components/profileCard';
 import GoalsList from '../../components/goalsList';
 import SearchQuotes from '../../components/searchQuotes';
 import QuotesList from '../../components/quotesList';
+// import Motivate from '../Motivate/motivate';
 
 class Profile extends Component {
     
@@ -16,7 +17,7 @@ class Profile extends Component {
                     <div className="profileCard"> <ProfileCard/> </div>
                     </Cell>
                          
-                    <Cell col={7}> <div className="goalsList"> <GoalsList/> </div> 
+                    <Cell col={7}> <div className=""> <GoalsList/> </div> 
                     </Cell>
 
                 </Grid>

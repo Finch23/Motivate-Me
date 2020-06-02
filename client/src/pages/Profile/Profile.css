@@ -178,8 +178,11 @@
     border-radius: 50px;
     padding: 5px;
     margin-top: 2px;
-    height: 408px;
+    overflow: scroll;
+    max-height: 410px;
   }
+
+ 
   
   .findquote {
     height: 30px;
@@ -192,22 +195,16 @@
   }
 
   .button {
-    /* background-color: #b71c1c;
-    color: whitesmoke;
     font-weight: bolder;
-    padding: 5px;
-    height: 30px; */
-    display: inline-block;
-    padding: 0.3em 1.2em;
-    margin: 0 0.3em 0.3em 0;
-    margin-left: 5px;
+    height: 40px; 
+    margin: 10px;
     border-radius: 2em;
     box-sizing: border-box;
     text-decoration:none;
     font-family:'Roboto',sans-serif;
     font-weight:300;
     color:#FFFFFF;
-    background-color:#4eb5f1;
+    background-color:#b71c1c;
     text-align:center;
     transition: all 0.2s;
   }

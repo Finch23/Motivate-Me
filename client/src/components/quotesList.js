@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { List, ListItem, ListItemContent, ListItemAction, Checkbox } from 'react-mdl';
+// import { List, ListItem, ListItemContent, ListItemAction, Checkbox } from 'react-mdl';
 import '../pages/Profile/Profile.css';
 class QuotesList extends Component {
     render() {

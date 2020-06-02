@@ -1,62 +1,113 @@
-import React, { Component } from "react";
-import { Link } from 'react-router-dom';
-import { Layout, Header, Navigation, Footer, Drawer, Content } from 'react-mdl';
-import Main from './main';
-import './App.css';
-// import BackgroundSlideshow from 'react-background-slideshow';
+import React, { Component } from 'react';
+import "./App.css";
+import { Route, Link, Switch } from 'react-router-dom';
+import Login from '../src/pages/AUTH/Login';
+import Signup from '../src/pages/AUTH/Signup';
+import Nav from './components/Nav/Nav';
+import Contact from './pages/Contact/contact';
+import Quotes from './pages/Motivate/quotes';
+import QuotesList from './components/quotesList';
+import Profile from './pages/Profile';
+import NewGoal from './pages/Motivate/addquote';
+import AUTH from './utils/AUTH';
+import { Footer, Content, Header, Navigation, Drawer, Layout} from 'react-mdl';
 
-// import image1 from './components/assets/bike.jpg';
-// import image2 from './components/assets/code.jpg';
-// import image3 from './components/assets/jump.jpg';
-// import image4 from './components/assets/look2.jpg';
-// import image5 from './components/assets/run.jpg';
-// import image6 from './components/assets/yoga.jpg';
 
-class App extends Component {
-  render () {
-    return (
-      <div className="demo-big-content">
-    <Layout>
-        <Header className="header-color" title="Motivate Me" scroll>
-            <Navigation>
-            <Link to="/">Home</Link>
-            <Link to="/profile">Profile</Link>
-            <Link to="/motivate">My Quotes</Link>
-            </Navigation>
-        </Header>
-        <Drawer className="drawer-color" title="Motivate Me">
-            <Navigation>
-                <Link to="/">Home</Link>
-                <Link to="/profile">Profile</Link>
-                <Link to="/motivate">My Quotes</Link>
-            </Navigation>
-        </Drawer>
+class App1 extends Component {
+  
+	constructor() {
+	  super();
+	  
+		  this.state = {
+			  loggedIn: false,
+			  user: null
+	  };
+	}
+	
+	  componentDidMount() {
+		  AUTH.getUser().then(response => {
+			  console.log(response.data);
+			  if (!!response.data.user) {
+				  this.setState({
+					  loggedIn: true,
+					  user: response.data.user
+				  });
+			  } else {
+				  this.setState({
+					  loggedIn: false,
+					  user: null
+				  });
+			  }
+		  });
+	  }
+  
+	  logout = (event) => {
+	  event.preventDefault();
+	  
+		  AUTH.logout().then(response => {
+			  console.log('successfully logged out!');
+			  console.log(response.status);
+			  if (response.status === 200) {
+				  this.setState({
+					  loggedIn: false,
+					  user: null
+				  });
+			  }
+  
+		  });
+	  }
+  
+	  login = (username, password) => {
+		  AUTH.login(username, password).then(response => {
+		console.log(response);
+		if (response.status === 200) {
+		  // update the state
+		  this.setState({
+			loggedIn: true,
+			user: response.data.user
+		  });
+		}
+	  });
+	  }
+  
+	  render() {
+		  return (
+			  <Layout className="mdl-layout__content">
+			  <div className="">
+		  { this.state.loggedIn && (
+			<div>
+				
+			  <Nav className="header-color" user={this.state.user} logout={this.logout}/>
+			  
+			  <div className="">
+							    <Switch>
+									<Route exact path="/" component={() => <Profile user={this.state.user}/>} />
+									<Route exact path="/profile" component={() => <Profile user={this.state.user}/>} />
+									<Route exact path="/quotes" component={(props) => <QuotesList user={this.state.user} {...props}/>} />
+									<Route exact path="/addquote" component={() => <NewGoal user={this.state.user}/>} />
+									<Route path="/contact" component={Contact} />
+								</Switch>
 
-        <Content>
-        {/* <BackgroundSlideshow images={[ image1, image2, image3, image4, image5, image6 ]} /> */}
-        <div className="page-content" />
-            <Main/>
-        </Content>
-
-        <div className="footer-links">
-        <Footer className="footer-color">
-
-        <Link to="/contact"  style={{ color: "white", textDecoration: 'none' }}>Contact Us</Link>
-            {/* Name of link */}
-            <a href="#" target="_blank" rel="noopener noreferrer">
-            </a>
-
-            {/* Name of Link */}
-            <a href="#" target="_blank" rel="noopener noreferrer">
-            </a>
-
-        </Footer>
-        </div>
-      
-    </Layout>
-</div>
-    );
+				<div className="footer-links">
+					<Footer className="footer-color">
+						<Link to="/contact"  style={{ color: "white", textDecoration: 'none' }}>About the Developers</Link>
+					</Footer>
+			    </div>
+				
+			  </div>
+			</div>
+		  )}
+		  { !this.state.loggedIn && (
+			<div className="" >
+			  <Route exact path="/" component={() => <Login login={this.login}/>} />
+			  <Route exact path="/profile" component={() => <Login login={this.login}/>} />
+			  <Route exact path="/signup" component={Signup} />
+			</div>
+		  )}
+			  </div>
+			  </Layout>
+		  )
+	  }
   }
-}
-
-export default App;
+  
+  export default App1;
