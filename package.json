@@ -4,6 +4,7 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "server/server.js",
   "dependencies": {
+    "@material-ui/core": "^4.10.1",
     "axios": "^0.19.2",
     "bcrypt": "^4.0.1",
     "bcryptjs": "^2.4.3",
@@ -12,6 +13,7 @@
     "express": "^4.17.1",
     "express-session": "^1.17.1",
     "if-env": "^1.0.4",
+    "lodash": "^4.17.15",
     "mongoose": "^5.9.15",
     "morgan": "^1.10.0",
     "passport": "^0.4.1",

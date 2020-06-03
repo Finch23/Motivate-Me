@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { Link } from 'react-router-dom';
-import { Layout, Header, Navigation, Footer, Drawer, Content } from 'react-mdl';
+import { Layout, Header, Navigation} from 'react-mdl';
 
 
 const Nav = (props) => {
@@ -30,6 +30,7 @@ const Nav = (props) => {
           <Navigation>
           {/* <Link to="/">Home</Link> */}
           <Link to="/profile">Profile</Link>
+          <Link to="/addquote">My Goals</Link>
           <Link to="/quotes">My Quotes</Link>
               <div className="float-right">
                     {greeting}&emsp;&emsp;  

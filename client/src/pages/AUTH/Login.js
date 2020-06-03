@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Redirect, Link } from 'react-router-dom';
-import Profile from '../Profile/profile';
 import './Login.css';
+import '../Motivate/Motivate.css';
 import BackgroundSlideshow from 'react-background-slideshow';
 
 import image1 from './assets/bike.jpg';
@@ -23,24 +23,25 @@ function Login({login}) {
       ...userObject,
 			[event.target.name]: event.target.value
 		});
-	};
-
-	const handleSubmit = (event) => {
+    };
+    
+    const handleSubmit = (event) => {
 		event.preventDefault();
 		login(userObject.username, userObject.password);
 		setRedirectTo('/');
-	};
+    };
+    
+    if (redirectTo) {
+        return <Redirect to={{ pathname: redirectTo }} />
+      } else {
+        return (
 
-  if (redirectTo) {
-    return <Redirect to={{ pathname: redirectTo }} />
-  } else {
-    return (
+            <div className="zindex1"> 
 
-        <div className="zindex1"> 
-              
-                <form className="box zindex1" action="/profile" component={Profile} method="post" >
+<form className="box zindex1" action="/profile" method="post" >
                 <h1 className="goaltitle zindex1">Login</h1>
-                    <input 
+
+                <input 
                         type="text"
                         name="username" 
                         placeholder="Username"  
@@ -49,7 +50,7 @@ function Login({login}) {
                     </input>
                 <br></br>
 
-                    <input
+                <input
                          type="password" 
                         name="password" 
                         placeholder="Password"
@@ -59,18 +60,18 @@ function Login({login}) {
                 <br></br>
 
                 <button className="input-text" onClick={handleSubmit}>Login</button>
-             
+
                 <br></br>
 
+                
                 <Link to="/signup">New? Register</Link>
-             
+
               </form>
-           
+
               <BackgroundSlideshow images={[ image1, image2, image3, image4, image5, image6 ]} />
             </div>
-        
+
         )
     }
 }
-
 export default Login;
