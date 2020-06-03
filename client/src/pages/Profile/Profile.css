@@ -1,5 +1,6 @@
 .profile-card{
-    width: 90%;
+    width: 85%;
+    height: 380px;
     border-radius: 50px;
     margin-left: 20px;
     overflow: hidden;
@@ -89,7 +90,7 @@
     justify-content: center;
     font-size: 10px;
     text-align: center;
-    height: 50px;
+    height: 10px;
     font-family: Arial, Helvetica, sans-serif;
   }
   
@@ -176,10 +177,10 @@
     border-radius: 50px;
     padding: 5px;
     margin-top: 2px;
+    min-height: 365px;
+    max-height: 365px;
     overflow-y: scroll;
     overflow-x: hidden;
-    min-height: 410px;
-    max-height: 410px;
   }
 
  
