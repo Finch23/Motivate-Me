@@ -49,8 +49,8 @@ function App({ classes }) {
 
   return (
     
-    <Grid className={classes.container} className="goalsList"  justify="center" container>
-      <Grid xs={15} lg={8} item>
+    <Grid className={classes.container} className="randomgoalsList"  justify="center" container>
+      <Grid xs={15} lg={20} item>
       <h3 className="DevName" align="center">Get Motivated</h3> 
             <hr></hr>
         {
