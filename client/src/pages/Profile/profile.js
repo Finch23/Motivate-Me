@@ -17,7 +17,7 @@ class Profile extends Component {
                     <div className="profileCard"> <ProfileCard/> </div>
                     </Cell>
                          
-                    <Cell col={7}> <div className=""> <GoalsList/> </div> 
+                    <Cell col={7}> <div> <GoalsList/> </div> 
                     </Cell>
 
                 </Grid>
