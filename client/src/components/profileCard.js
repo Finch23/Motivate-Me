@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Avatar from 'react-avatar';
 import '../pages/Profile/Profile.css';
 class ProfileCard extends Component {
     render() {
@@ -11,18 +12,19 @@ class ProfileCard extends Component {
                             <i class="message fas fa-envelope"></i>
                             <i class="notif fas fa-bell"></i>
                         <div class="pic">
-                            <img src="pic.png" alt=""></img>
+                            {/* <img src="pic.png" alt=""></img> */}
+                            <Avatar githubHandle= "this.state.user" size={150} round="20px" />
                         </div>
                         <div class="name">Profile</div>
                         <div class="tag">@github</div>
                         </div>
                 
                         <div class="bottom-section">
-                        <div class="social-media">
+                        {/* <div class="social-media">
                             <a href="https://www.google.com"><i class="material-icons">add</i></a>
                             <a href="https://www.google.com"><i class="material-icons">list</i></a>
                             <a href="https://www.google.com"><i class="material-icons">done_all</i></a>
-                        </div>
+                        </div> */}
                 
                             <div class="videos">90<span>Add Goals!</span></div>
                             <div class="border"></div>
