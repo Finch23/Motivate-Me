@@ -4,17 +4,18 @@ import Button from '@material-ui/core/Button';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
+import "../pages/Profile/Profile.css"
 
 
 const QuoteMachine = ({ assignNewQuoteIndex, selectedQuote }) => (
   <Card>
-    <CardContent>
+    <CardContent className="random-quote">
       <Typography id="text">
         {selectedQuote.quote} - <span id="author">{selectedQuote.author}</span>
       </Typography>
     </CardContent>
     <CardActions>
-      <Button id="new-quote" size="large" onClick={assignNewQuoteIndex}>Next Quote</Button>
+      <Button className="button" size="large" onClick={assignNewQuoteIndex}>Next Quote</Button>
     </CardActions>
   </Card>
 );
