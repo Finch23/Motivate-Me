@@ -24,7 +24,7 @@ export default {
   // Gets all quotes from API using search query
   getApiQuotes: function(query) {
     console.log("API Query: " + query);
-    return axios.get("/api/apiquotes", { params: { q: query } });
+    return axios.get("/api/quotesapi", { params: { q: query } });
   },
 
    
