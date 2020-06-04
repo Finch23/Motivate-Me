@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Fragment, Component } from 'react';
 import '../pages/Profile/Profile.css';
 import { createAvatarComponent, GithubSource } from 'react-avatar';
 
@@ -17,7 +17,7 @@ class ProfileCard extends Component {
                             <i class="message fas fa-envelope"></i>
                             <i class="notif fas fa-bell"></i>
                         <div class="pic">
-                            <Avatar githubHandle={this.state.user.githubHandle} size={150} round="20px" />
+                           <Avatar githubHandle={this.state.user.githubHandle} size={150} round="20px" />
                         </div>
                         <div class="name">Profile</div>
                         <div class="tag">@github</div>
@@ -36,13 +36,15 @@ class ProfileCard extends Component {
                             <div class="border"></div>
                             <div class="views">7.3M <span>Completed</span></div>
 
-                        </div>
-                    </div>
+                                {/* Bottom, white section of the profile card */}
+                                <div class="bottom-section">
+                                <   h3 align="center" className="DevName">What are you motivated to do today?</h3>
 
-                
+                                </div>
+                    </div>
                 </div>
-                
             </div>
+        </div>
         )
             
             

@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import '../../App.css';
-import { Grid, Cell, Card, List, ListItem } from 'react-mdl';
+import { Grid, Cell, List, ListItem, Checkbox } from 'react-mdl';
 import API from "../../utils/API";
 import DeleteBtn from "../../components/DeleteBtn";
+
 
 class NewGoal extends Component {
   state = {
@@ -96,9 +97,11 @@ class NewGoal extends Component {
                         </form>
                     </div>
                     </Cell>
-                         
+
+                 
                     <Cell col={6}> 
-                    <div> 
+
+                    <div className="goalsList"> 
                         <h3 align="center" className="DevName">Saved Goals</h3>
                         <hr></hr>
                         {this.state.Goal ? (
@@ -111,6 +114,7 @@ class NewGoal extends Component {
                               {Goal.title}
                             </strong>
                           </a>
+                          &nbsp;
                           <DeleteBtn onClick={() => this.deleteGoal(Goal._id)} />
                         </ListItem>
                       );

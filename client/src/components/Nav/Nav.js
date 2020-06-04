@@ -1,6 +1,9 @@
 import React, { Fragment } from "react";
 import { Link } from 'react-router-dom';
-import { Layout, Header, Navigation, Footer, Drawer, Content } from 'react-mdl';
+import { Layout, Header, Navigation} from 'react-mdl';
+import MMlogo2 from '../../pages/AUTH/assets/MMlogo2.png';
+import './Nav.css';
+
 
 
 const Nav = (props) => {
@@ -26,10 +29,11 @@ const Nav = (props) => {
     <div className="demo-big-content">
       <Layout className="mdl-layout__content"> 
           <Header className="header-color" title="Motivate Me" scroll>
-
+          <div><img  className="logo" src={MMlogo2} alt="avatar-placeholder"></img></div>
           <Navigation>
           {/* <Link to="/">Home</Link> */}
           <Link to="/profile">Profile</Link>
+          <Link to="/addquote">My Goals</Link>
           <Link to="/quotes">My Quotes</Link>
               <div className="float-right">
                     {greeting}&emsp;&emsp;  
