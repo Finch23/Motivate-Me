@@ -182,7 +182,17 @@
     overflow-y: scroll;
     overflow-x: hidden;
   }
-
+  .randomgoalsList {
+    background-color: rgb(135, 203, 245, .9);
+    opacity: 10;
+    box-shadow: 0 0 10px #00000070;
+    border-radius: 50px;
+    padding: 5px;
+    margin-top: 2px;
+    min-height: 365px;
+    max-height: 365px;
+    overflow-x: hidden;
+  }
  
   
   .findquote {
@@ -213,4 +223,14 @@
   .button:hover{
     /* background-color:#4095c6; */
     border-color: rgba(255,255,255,1);
+  }
+
+  .random-quote{
+    background-color:  rgba(255, 255, 255, 0.9);
+    opacity: 3;
+  }
+
+.MuiTypography-root.MuiTypography-body1 {
+  font-size: 2rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
