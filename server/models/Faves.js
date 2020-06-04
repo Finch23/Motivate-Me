@@ -1,7 +1,11 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const quotesSchema = new Schema({
+const favesSchema = new Schema({
+
+    username: {type: String},
+
+    selected: { type: Boolean, default: false },
 
     type: "object",
 
@@ -33,32 +37,6 @@ const quotesSchema = new Schema({
     }],
 });
 
-const Quotes = mongoose.model('Quotes', quotesSchema);
+const Faves = mongoose.model('Faves', favesSchema);
 
-module.exports = Quotes;
-
-
-// const mongoose = require('mongoose');
-// const Schema = mongoose.Schema;
-
-// const quotesSchema = new Schema({
-//     quotestitle: { 
-//         type: String 
-//     },
-//     quotesauthor: { 
-//         type: String 
-//     },
-//     quotesurl: { 
-//         type: String 
-//     },
-//     quotesmedia: { 
-//         type: String 
-//     },
-//     quotescategory: { 
-//         type: String 
-//     }
-// });
-
-// const Quotes = mongoose.model('Quotes', quotesSchema);
-
-// module.exports = Quotes;
+module.exports = Faves;

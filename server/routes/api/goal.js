@@ -1,7 +1,6 @@
 const router = require ('express').Router();
 const goalController = require ('../../controllers/goalController');
 
-
 router.route('/').post(goalController.create);
 
 router.route('/username/:username').get(goalController.findAll);
