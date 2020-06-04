@@ -19,12 +19,18 @@ export default {
   saveGoal: function(goalData) {
     return axios.post("/api/goals", goalData);
   },
+
+  // Updates goals with the given id
+  updateGoal: function(id, goalData) {
+    return axios.put("/api/goals/" + id, goalData);
+  },
+
   
   // --------Quotes(FROM API)--------------
   // Gets all quotes from API using search query
   getApiQuotes: function(query) {
     console.log("API Query: " + query);
-    return axios.get("/api/apiquotes", { params: { q: query } });
+    return axios.get("/api/quotesapi", { params: { q: query } });
   },
 
    

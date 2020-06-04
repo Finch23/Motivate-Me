@@ -1,36 +1,69 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { List, ListItem, ListItemContent, ListItemAction, Icon } from 'react-mdl';
 import '../pages/Profile/Profile.css';
-// import Motivate from '../pages/Motivate/motivate';
-class GoalsList extends Component {
-    render() {
-        
-        return(
-            <div className="goalsList">
-                <h3 className="DevName" align="center">My Goals</h3>
-                <hr></hr>
-            <List>
-                <ListItem twoLine>
-                    <ListItemContent avatar="" >Look for a new job</ListItemContent>
-                    <ListItemAction info="">
-                    <a href="google.com"><Icon name="X" /></a>
-                    </ListItemAction>
-                </ListItem>
-                
+import React, { useEffect, useState } from 'react';
+import { random } from 'lodash';
 
-                <div>
-                <form method="get" action="/addquote">
-                    <button className="button" style={{float: "right", marginRight: "60px"}} type="submit">Add New Goal</button>
-                </form>
-                 </div>
-            </List>
-            </div>
+import Grid from '@material-ui/core/Grid';
+import { withStyles } from '@material-ui/core/styles';
+import QuoteMachine from '../components/QuoteMachine';
 
-        )
-            
-            
+const styles = {
+  container: {
+    alignItems: 'center',
+    display: 'flex',
+    height: '100vh',
+  }
+};
+
+function App({ classes }) {
+  const [quotes, setQuotes] = useState([]);
+  const [selectedQuoteIndex, setSelectedQuoteIndex] = useState(null);
+
+  useEffect(async () => {
+    const data = await fetch('https://gist.githubusercontent.com/natebass/b0a548425a73bdf8ea5c618149fe1fce/raw/f4231cd5961f026264bb6bb3a6c41671b044f1f4/quotes.json');
+    const quotes = await data.json();
+    setQuotes(quotes);
+    setSelectedQuoteIndex(random(0, quotes.length - 1));
+  }, []);
+
+  function getSelectedQuote() {
+    if (!quotes.length || !Number.isInteger(selectedQuoteIndex)) {
+      return undefined;
     }
+    return quotes[selectedQuoteIndex];
+  }
+
+  /**
+   * Returns an integer representing an index in state.quotes
+   * If state.quotes is empty, returns undefined
+   */
+  function generateNewQuoteIndex() {
+    if (!quotes.length) {
+      return undefined;
+    }
+    return random(0, quotes.length - 1);
+  }
+
+  function assignNewQuoteIndex() {
+    setSelectedQuoteIndex(generateNewQuoteIndex());
+  }
+
+  return (
+    
+    <Grid className={classes.container} className="randomgoalsList"  justify="center" container>
+      <Grid xs={15} lg={20} item>
+      <h3 className="DevName" align="center">Get Motivated</h3> 
+            <hr></hr>
+        {
+          getSelectedQuote() ?
+          <QuoteMachine selectedQuote={getSelectedQuote()} assignNewQuoteIndex={assignNewQuoteIndex} /> :
+          null
+        }
+      </Grid>
+    </Grid>
+
+  );
 }
 
-export default GoalsList;
+export default withStyles(styles)(App);
+
+

@@ -5,12 +5,11 @@ import Login from '../src/pages/AUTH/Login';
 import Signup from '../src/pages/AUTH/Signup';
 import Nav from './components/Nav/Nav';
 import Contact from './pages/Contact/contact';
-import Quotes from './pages/Motivate/quotes';
 import QuotesList from './components/quotesList';
 import Profile from './pages/Profile';
 import NewGoal from './pages/Motivate/addquote';
 import AUTH from './utils/AUTH';
-import { Footer, Content, Header, Navigation, Drawer, Layout} from 'react-mdl';
+import { Footer, Layout} from 'react-mdl';
 
 
 class App extends Component {
@@ -72,14 +71,14 @@ class App extends Component {
   
 	  render() {
 		  return (
-			  <Layout className="mdl-layout__content">
-			  <div className="">
+			  <Layout className="">
+			  <div className="mdl-layout__content">
 		  { this.state.loggedIn && (
 			<div>
 				
 			  <Nav className="header-color" user={this.state.user} logout={this.logout}/>
 			  
-			  <div className="">
+			  <div>
 							    <Switch>
 									<Route exact path="/" component={() => <Profile user={this.state.user}/>} />
 									<Route exact path="/profile" component={() => <Profile user={this.state.user}/>} />
@@ -98,7 +97,9 @@ class App extends Component {
 			</div>
 		  )}
 		  { !this.state.loggedIn && (
-			<div className="" >
+			<div>
+				
+
 			  <Route exact path="/" component={() => <Login login={this.login}/>} />
 			  <Route exact path="/profile" component={() => <Login login={this.login}/>} />
 			  <Route exact path="/signup" component={Signup} />
