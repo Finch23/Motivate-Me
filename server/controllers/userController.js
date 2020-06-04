@@ -11,7 +11,7 @@ module.exports = {
     }
   },
   register: (req, res) => {
-    const { firstName, lastName, username, password } = req.body;
+    const { firstName, lastName, githubHandle, username, password } = req.body;
     db.User.findOne({ 'username': username }, (err, userMatch) => {
       if (userMatch) {
         return res.json({
@@ -21,6 +21,7 @@ module.exports = {
       const newUser = new db.User({
         'firstName': firstName,
         'lastName': lastName,
+        'githubHandle': githubHandle,
         'username': username,
         'password': password
       });

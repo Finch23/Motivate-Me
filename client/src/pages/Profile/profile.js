@@ -14,7 +14,7 @@ class Profile extends Component {
             <div>
                 <Grid>
                     <Cell col={5}>
-                    <div className="profileCard"> <ProfileCard/> </div>
+                    <div className="profileCard"> <ProfileCard user={this.props.user}/> </div>
                     </Cell>
                          
                     <Cell col={7}> <div> <GoalsList/> </div> 
