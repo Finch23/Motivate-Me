@@ -1,9 +1,11 @@
 import React, { Fragment, Component } from 'react';
 import '../pages/Profile/Profile.css';
-import MMlogo from '../pages/AUTH/assets/MMlogo.png'
 
+import { createAvatarComponent, GithubSource } from 'react-avatar';
 
-
+const Avatar = createAvatarComponent({
+    sources: [ GithubSource ]
+});
 
 class ProfileCard extends Component {
     render() {
@@ -15,10 +17,9 @@ class ProfileCard extends Component {
                         <div class="top-section">
                             <i class="message fas fa-envelope"></i>
                             <i class="notif fas fa-bell"></i>
-
                                 {/* This is the div for avatars */}
                                 <div class="pic">
-                                    <img src={MMlogo} alt="avatar-placeholder"></img>
+                                    <Avatar skypeId="sitebase" alt="avatar-placeholder">
                                 </div>
                                 
                                 <div class="name"> Profile</div>
@@ -33,6 +34,7 @@ class ProfileCard extends Component {
                     </div>
                 </div>
             </div>
+        </div>
         )
             
             
