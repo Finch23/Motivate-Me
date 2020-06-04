@@ -5,8 +5,9 @@
   "proxy": "http://localhost:3001",
   "dependencies": {
     "axios": "^0.19.2",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
-    "react-avatar": "^3.9.6",
+    "react-avatar": "^3.9.7",
     "react-background-slideshow": "^1.0.4",
     "react-dom": "^16.13.1",
     "react-mdl": "^2.1.0",

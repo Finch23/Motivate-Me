@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
 import '../pages/Profile/Profile.css';
+import { createAvatarComponent, GithubSource } from 'react-avatar';
+
+const Avatar = createAvatarComponent({
+    sources: [ GithubSource ]
+});
+
 class ProfileCard extends Component {
     render() {
         
@@ -11,7 +17,7 @@ class ProfileCard extends Component {
                             <i class="message fas fa-envelope"></i>
                             <i class="notif fas fa-bell"></i>
                         <div class="pic">
-                            <img src="pic.png" alt=""></img>
+                            <Avatar githubHandle={this.state.user.githubHandle} size={150} round="20px" />
                         </div>
                         <div class="name">Profile</div>
                         <div class="tag">@github</div>
