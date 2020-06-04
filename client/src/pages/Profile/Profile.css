@@ -183,7 +183,7 @@
     overflow-x: hidden;
   }
   .randomgoalsList {
-    background-color: rgb(135, 203, 245, .9);
+    background-color: rgba(135, 203, 245, .9);
     opacity: 10;
     box-shadow: 0 0 10px #00000070;
     border-radius: 50px;
@@ -226,11 +226,16 @@
   }
 
   .random-quote{
-    background-color:  rgba(255, 255, 255, 0.9);
+    background-color:  rgba(115, 63, 184, 0.9);
     opacity: 3;
+    border: black 10px double;
+  box-shadow: 8px 8px #888888;
   }
 
 .MuiTypography-root.MuiTypography-body1 {
   font-size: 2rem;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  color: antiquewhite;
+  text-shadow: 1.6px 2px rgb(22, 21, 21);
   }
