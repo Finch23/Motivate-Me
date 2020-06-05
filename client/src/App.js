@@ -5,7 +5,7 @@ import Login from '../src/pages/AUTH/Login';
 import Signup from '../src/pages/AUTH/Signup';
 import Nav from './components/Nav/Nav';
 import Contact from './pages/Contact/contact';
-import QuotesList from './components/quotesList';
+import QuotesList from './components/QuotesAPIList';
 import Profile from './pages/Profile';
 import NewGoal from './pages/Motivate/addquote';
 import AUTH from './utils/AUTH';

@@ -4,7 +4,7 @@ import { random } from 'lodash';
 
 import Grid from '@material-ui/core/Grid';
 import { withStyles } from '@material-ui/core/styles';
-import QuoteMachine from '../components/QuoteMachine';
+import QuoteMachine from './QuoteMachine';
 
 const styles = {
   container: {
@@ -18,11 +18,13 @@ function App({ classes }) {
   const [quotes, setQuotes] = useState([]);
   const [selectedQuoteIndex, setSelectedQuoteIndex] = useState(null);
 
-  useEffect(async () => {
-    const data = await fetch('https://gist.githubusercontent.com/natebass/b0a548425a73bdf8ea5c618149fe1fce/raw/f4231cd5961f026264bb6bb3a6c41671b044f1f4/quotes.json');
-    const quotes = await data.json();
-    setQuotes(quotes);
-    setSelectedQuoteIndex(random(0, quotes.length - 1));
+  useEffect(() => {
+    (async () => {
+      const data = await fetch('https://gist.githubusercontent.com/natebass/b0a548425a73bdf8ea5c618149fe1fce/raw/f4231cd5961f026264bb6bb3a6c41671b044f1f4/quotes.json');
+          const quotes = await data.json();
+          setQuotes(quotes);
+          setSelectedQuoteIndex(random(0, quotes.length - 1));
+    })();
   }, []);
 
   function getSelectedQuote() {
@@ -50,7 +52,7 @@ function App({ classes }) {
   return (
     
     <Grid className={classes.container} className="randomgoalsList"  justify="center" container>
-      <Grid xs={15} lg={20} item>
+      <Grid item>
       <h3 className="DevName" align="center">Get Motivated</h3> 
             <hr></hr>
         {
@@ -65,5 +67,3 @@ function App({ classes }) {
 }
 
 export default withStyles(styles)(App);
-
-

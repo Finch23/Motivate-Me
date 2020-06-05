@@ -28,7 +28,7 @@ function Login({login}) {
     const handleSubmit = (event) => {
 		event.preventDefault();
 		login(userObject.username, userObject.password);
-		setRedirectTo('/');
+		setRedirectTo('/profile');
     };
     
     if (redirectTo) {
