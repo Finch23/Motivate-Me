@@ -21,6 +21,7 @@ class Signup extends Component {
 		this.state = {
       firstName: '',
       lastName: '',
+      githubHandle: '',
 			username: '',
 			password: '',
 			confirmPassword: '',
@@ -39,6 +40,7 @@ class Signup extends Component {
 		AUTH.signup({
       firstName: this.state.firstName,
       lastName: this.state.lastName,
+      githubHandle: this.state.githubHandle,
       username: this.state.username,
       password: this.state.password
     }).then(response => {
@@ -79,9 +81,18 @@ class Signup extends Component {
                   placeholder="Last Name"
                   value={this.state.lastName}
                   onChange={this.handleChange}>                      
-                </input>                
+                </input>
 
-                
+
+                <input
+                  type="text"
+                  name="githubHandle"
+                  placeholder="Github Handle"
+                  value={this.state.githubHandle}
+                  onChange={this.handleChange}>                      
+                </input>                                
+
+    
                 <input
                   type="text"
                   name="username"
