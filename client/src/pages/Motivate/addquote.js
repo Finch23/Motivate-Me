@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import '../../App.css';
-import { Grid, Cell, List, ListItem, Checkbox } from 'react-mdl';
+import { Grid, Cell, List, ListItem } from 'react-mdl';
 import API from "../../utils/API";
 import DeleteBtn from "../../components/DeleteBtn";
 
