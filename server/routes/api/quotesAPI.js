@@ -18,7 +18,8 @@ router.get('/', (res, err) => {
         "language_code":"en"
         }
         })
-        .then((res)=>{
+        .then((data)=>{
+            res.send(data)
         console.log(res)
         })
         .catch((err)=>{
