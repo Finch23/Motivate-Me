@@ -4,7 +4,7 @@ import '../Profile/Profile.css'
 import ProfileCard from '../../components/profileCard';
 import GoalsList from '../../components/goalsList';
 import SearchQuotes from '../../components/searchQuotes';
-import QuotesList from '../../components/quotesList';
+import QuotesList from '../../components/QuotesAPIList';
 // import Motivate from '../Motivate/motivate';
 
 class Profile extends Component {
@@ -35,6 +35,4 @@ class Profile extends Component {
             
     }
 }
-
 export default Profile;
-
