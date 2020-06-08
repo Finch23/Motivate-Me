@@ -28,10 +28,10 @@ export default {
   
   // --------Quotes(FROM API)--------------
   // Gets all quotes from API using search query
-  getApiQuotes: function(query) {
-    console.log("API Query: " + query);
-    return axios.get("/api/quotesapi", { params: { q: query } });
-  },
+  // getApiQuotes: function(query) {
+  //   console.log("API Query: " + query);
+  //   return axios.get("/api/quotesapi", { params: { q: query } });
+  // },
 
    
    // --------FAVORITE QUOTES-------------

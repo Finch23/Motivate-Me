@@ -7,9 +7,9 @@ class Quotes extends Component {
         return(
             <div > 
                 <br></br>
-            <h3 className="DevName" align="center">Your Quotes</h3>
+            <h3 className="DevName" align="center">Your Videos</h3>
                 <hr></hr>
-            <h5 align="center">No Quotes to Display</h5>
+            <h5 align="center">No Videos to Display</h5>
         
             </div>
         

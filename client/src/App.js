@@ -5,7 +5,7 @@ import Login from '../src/pages/AUTH/Login';
 import Signup from '../src/pages/AUTH/Signup';
 import Nav from './components/Nav/Nav';
 import Contact from './pages/Contact/contact';
-import QuotesList from './components/QuotesAPIList';
+import Videos from './components/Videos';
 import Profile from './pages/Profile';
 import NewGoal from './pages/Motivate/addquote';
 import AUTH from './utils/AUTH';
@@ -82,7 +82,7 @@ class App extends Component {
 							    <Switch>
 									<Route exact path="/" component={() => <Profile user={this.state.user}/>} />
 									<Route exact path="/profile" component={() => <Profile user={this.state.user}/>} />
-									<Route exact path="/quotes" component={(props) => <QuotesList user={this.state.user} {...props}/>} />
+									<Route exact path="/quotes" component={(props) => <Videos user={this.state.user} {...props}/>} />
 									<Route exact path="/addquote" component={() => <NewGoal user={this.state.user}/>} />
 									<Route path="/contact" component={Contact} />
 								</Switch>
