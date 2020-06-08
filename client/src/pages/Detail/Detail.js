@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Grid, Cell } from 'react-mdl';
 import API from "../../utils/API";
-
+import '../Motivate/Motivate.css';
+import '../../App.css';
+import '../AUTH/Login.css';
 class Detail extends Component {
   state = {
     Goal: {},
@@ -17,7 +19,7 @@ class Detail extends Component {
 
   loadGoals = () => {
     console.log (this.props)
-    API.getGoals(this.props.match.params.id)
+    API.getGoal(this.props.match.params.id)
       .then(res => this.setState({ Goal: res.data }))
       .catch(err => console.log(err));
   };
@@ -34,7 +36,6 @@ class Detail extends Component {
 
     if (this.state.title || this.state.details) {
       API.updateGoal(this.state.Goal._id, {
-         // If there are empty fields, use values stored in state rather than clearing field
         title: this.state.title || this.state.Goal.title, 
         details: this.state.details || this.state.Goal.details,
       })
@@ -49,53 +50,38 @@ class Detail extends Component {
       <div>
         <Grid>
           <Cell col={12}>
-              <h1>
+              <h1 align="center" className="details-title">
                 {this.state.Goal.title}
               </h1>
           </Cell>
         </Grid>
 
-
-        <Grid> 
-          {/* left side */}
-          <Cell col={6}>
-          {/* row 1 */}
-          <Grid>
-          <Cell col={10}>
-            <article>
-              <h1>Goals</h1>
-              <p>
-              {this.state.Goals.details}
-              </p>
-            </article>
-            </Cell>
-          </Grid>
-          {/* row 2 */}
-          <Grid>
-          <Cell col={10}>
-          <article>
-              <h1>Goals</h1>
-              {/* Using <pre> instead of <p> will render user-inputted line breaks and formatting */}
-              <pre>
-              {this.state.Goals.details}
-              </pre>
-            </article>
-          </Cell>
-          </Grid>
-
-          {/* row 3 */}
         <Grid>
-            <Cell col={2}>    </Cell>
-            <Cell col={8}>
-            <Link to="/goal">← Back to Personal Goals</Link>
+            {/* left side, goal details */}
+            
+            <Cell className="dynamicgoalsList" col={6}>
+                <article>
+                  <h4 align="center"><strong>Details</strong></h4>
+                  <hr></hr>
+                  <h4 align="center">
+                  {this.state.Goal.details}
+                  </h4>
+                </article>
+              <hr></hr>
+              <br></br>
+              <br></br>
+              <br></br>
+              <Link to="/newgoal">← Back to Personal Goals</Link>
             </Cell>
-        </Grid>
-          </Cell>
-
-          {/* right side */}
+            
+            {/* right side, update goal section */}
           <Cell col={6}>
-              <form>
-                <input
+            <div>
+              <form className="box motivate" action="/newgoal" method="post">
+                <h1 align="center" className="goaltitle">Update Your Goal</h1>
+               
+                <input 
+                  type="text"
                   value={this.state.title}
                   onChange={this.handleInputChange}
                   name="title"
@@ -103,22 +89,26 @@ class Detail extends Component {
                   inputvalue="">
                  </input>
 
-                <input
+                 <br></br>
+                
+                 <textarea className="textarea"
+                  type="text"
                   value={this.state.details}
                   onChange={this.handleInputChange}
                   name="details"
-                  placeholder={this.state.Goals.details}
+                  placeholder={this.state.Goal.details}
                   inputvalue="">
-                </input>
-                </form>
+                </textarea>
 
-                <form>
-                    <button
+                <br></br>
+
+                <button className="updateBTN"
                     onClick={this.handleFormSubmit}>
                     Update Goal
-                    </button>
-                </form>
+                </button>
 
+                </form>
+                </div>
           </Cell>
         </Grid>
 

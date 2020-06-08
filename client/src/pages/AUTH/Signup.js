@@ -121,7 +121,7 @@ class Signup extends Component {
                   </input>
               
                 <br></br>
-                <button className="input-text" onClick={this.handleSubmit}>Register</button>
+                <button className="signupBTN" onClick={this.handleSubmit}>Register</button>
                 <br></br>
                 <Link to="/">Login</Link>
               </form>

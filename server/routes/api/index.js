@@ -5,7 +5,7 @@ const favesRoutes = require ('./faves')
 const videosAPIRoutes = require ('./videosAPI');
 
 
-router.use('/goals', goalRoutes);
+router.use('/goal', goalRoutes);
 router.use('/faves', favesRoutes);
 // router.use('/quotes', quotesRoutes);
 router.use('/videosapi', videosAPIRoutes);

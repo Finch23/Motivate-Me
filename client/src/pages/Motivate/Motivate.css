@@ -1,30 +1,18 @@
-.header-color {
-  background: #0099F7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #F11712, #0099F7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #F11712, #0099F7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
-
-}
-
-.footer-color {
-  background: #0099F7;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #F11712, #0099F7);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #F11712, #0099F7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-}
-
-
 .mdl-layout__content {
   margin: 0;
   /* margin-top: -210px; */
   font-family: sans-serif;
-  background: url(https://images.pexels.com/photos/531062/pexels-photo-531062.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat;
+  background: url(https://images.pexels.com/photos/705075/pexels-photo-705075.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat;
   background-size: cover;
   background-color: rgba(255,255,255,0.6);
-
+ 
 }
-
+ 
+.mdl-grid.new-goal-grid{
+  margin-top: 40px;
+  padding-top: 20px;
+}
+ 
 .mdl-card__supporting-text {
   font-family: 'oxygen', sans-serif;
   color: rgb(32, 2, 2);
@@ -32,21 +20,21 @@ background: linear-gradient(to left, #F11712, #0099F7); /* W3C, IE 10+/ Edge, Fi
   padding: 5px;
   justify-content: center;
 }
-
+ 
 span.mdl-layout-title  {
   font-family: 'Satisfy', cursive;
   color: rgb(124, 230, 221);
   font-size: 37px;
 }
-
-
+ 
+ 
 h3.DevName {
   font-family: 'Satisfy', cursive;
   color: #F11712;
   padding: 0;
   margin: 5px;
 }
-
+ 
 .contacts-grid {
   margin: 0;
   /* margin-top: -210px; */
@@ -54,13 +42,13 @@ h3.DevName {
   background-size: cover;
   background-color: rgba(255,255,255,0.6);
 }
-
+ 
 .App {
   font-family: sans-serif;
   text-align: center;
 }
-
-
+ 
+ 
 .zindex1{
   z-index: 1000;
  
@@ -75,20 +63,32 @@ h3.DevName {
   text-align: center;
 }
 
+.updateBox {
+  width: 400px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.5);
+  text-align: center;
+  border-radius: 75px;
+  min-height: 365px;
+}
+ 
 .box.zindex1{
   margin-top: 350px;
 }
-
+ 
 .box h1 {
   color: white;
   text-transform: uppercase;
   font-weight: 500;
 }
-
+ 
 h1.goaltitle{
   font-size: 40px;
 }
-
+ 
 .box input[type = "text"],.box input[type = "password"] {
   border: 0;
   background: none;
@@ -97,22 +97,22 @@ h1.goaltitle{
   text-align: center;
   border: 2px solid #3498db;
   padding: 14px 10px;
-  width: 200px;
+  width: 300px;
   outline: none;
   color: white;
   border-radius: 24px;
   transition: 0.25s;
 }
-
+ 
 .box input[type = "text"]:focus,.box input[type = "password"]:focus{
-  width: 280px;
+  width: 300px;
   border-color: #2ecc71;
 }
-
+ 
 main {
   flex: 1 0 auto;
 }
-
+ 
 .box input[type = submit] {
   border: 0;
   background: none;
@@ -126,32 +126,46 @@ main {
   border-radius: 24px;
   transition: 0.25s; 
 }
-
+ 
+.updateBTN, .loginBTN, .signupBTN{
+  border: 0;
+  background: none;
+  display: block;
+  margin: auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s; 
+}
+ 
 .brand-logo:hover {
   color: black;
 }
-
+ 
 .box input[placeholder]{
     color: white;
 }
-
+ 
 input.input-text {
     font-size: inherit;
 }
-
+ 
 ::placeholder {
     color: rgb(172, 231, 218);
     opacity: 1;
 }
-
+ 
 form.box {
     border-radius: 75px;
     padding: 50px;
     position: relative;
     margin-top: 220px;
 }
-
-
+ 
+ 
 .textarea{
   border-radius: 24px;
   border: 0;
@@ -161,7 +175,7 @@ form.box {
   text-align: center;
   border: 2px solid #3498db;
   padding: 14px 10px;
-  width: 200px;
+  width: 300px;
   outline: none;
   color: white;
   border-radius: 24px;
@@ -169,12 +183,12 @@ form.box {
   font-family: Arial, Helvetica, sans-serif;
   font-size: inherit;
 }
-
+ 
 .box textarea[type = "text"]:focus{
   width: 280px;
   border-color: #2ecc71;
 }
-
-
-
-
+ 
+ 
+ 
+ 
