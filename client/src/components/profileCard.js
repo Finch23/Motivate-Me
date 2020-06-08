@@ -19,7 +19,7 @@ class ProfileCard extends Component {
                             <i className="message fas fa-envelope"></i>
                             <i className="notif fas fa-bell"></i>
                         <div className="pic">
-                           <Avatar githubHandle={this.props.user.githubHandle} size={150} round="90px" />
+                           <Avatar githubHandle={this.props.user.githubHandle} size={180} round="90px" />
                         </div>
                         <div className="name">{this.props.user.username}</div>
                         <div className="tag">GitHub @{this.props.user.githubHandle}</div>
