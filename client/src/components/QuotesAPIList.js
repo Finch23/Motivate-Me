@@ -1,26 +1,44 @@
-import React, { Component } from 'react';
-// import { List, ListItem, ListItemContent, ListItemAction, Icon } from 'react-mdl';
+import React, { useState } from "react";
+import { Grid } from "@material-ui/core";
+import SearchBar from "./SearchBar";
+import VideoList from "./VideoList";
+import VideoDetail from "./VideoDetail";
 import '../pages/Profile/Profile.css';
-// import Motivate from '../pages/Motivate/motivate';
+import youtube from "./youtube";
 
-// Chris is going to work here for quotes API
-class QuotesAPIList extends Component {
-    render() {
-        
-        return(
-            <div className="">
-            
-                <h3 className="DevName" align="center">Quotes</h3> 
-                <hr></hr>
-                <h4 align="center">No Quotes to Display</h4>
-    
-                
-            </div>
+export default () => {
+  const [videos, setVideos] = useState([]);
+  const [selectedVideo, setSelectedVideo] = useState(null);
 
-        )
-            
-            
+return (
+  <Grid style={{ justifyContent: "center" }} container spacing={10}>
+    <Grid item xs={11}>
+      <Grid container spacing={10}>
+        <Grid item xs={12}>
+          <SearchBar onSubmit={handleSubmit} />
+        </Grid>
+        <Grid item xs={8}>
+          <VideoDetail video={selectedVideo} />
+        </Grid>
+        <Grid item xs={4}>
+          <VideoList videos={videos} onVideoSelect={setSelectedVideo} />
+        </Grid>
+      </Grid>
+    </Grid>
+  </Grid>
+);
+
+async function handleSubmit(searchTerm) {
+  const { data: { items: videos } } = await youtube.get("search", {
+    params: {
+      part: "snippet",
+      maxResults: 5,
+      key: process.env.API_KEY,
+      q: searchTerm,
     }
-}
+  });
 
-export default QuotesAPIList;
+  setVideos(videos);
+  setSelectedVideo(videos[0]);
+}
+}

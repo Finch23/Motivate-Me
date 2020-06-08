@@ -21,8 +21,8 @@ class ProfileCard extends Component {
                         <div className="pic">
                            <Avatar githubHandle={this.props.user.githubHandle} size={150} round="20px" />
                         </div>
-                        <div className="name">Profile</div>
-                        <div className="tag">@github</div>
+                        <div className="name">{this.props.user.username}</div>
+                        <div className="tag">GitHub @{this.props.user.githubHandle}</div>
                         </div>
                 
                         <div className="bottom-section">
