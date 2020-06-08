@@ -1,241 +1,227 @@
 .profile-card{
-    width: 85%;
-    height: 380px;
-    border-radius: 50px;
-    margin-left: 20px;
-    overflow: hidden;
-    text-align: center;
-    position: relative;
-    /* box-shadow: 0 0 10px #00000070; */
-    align-items: center;
-    box-shadow: -2rem 2rem 2rem rgba(0, 0, 0, 0.2);
-  }
-  
-  .top-section{
-    padding: 35px 10px;
-    background: #000000aa;
-  }
-  
-  .message,.notif{
-    position: absolute;
-    top: 40px;
-    font-size: 20px;
-    cursor: pointer;
-    color: #82fbf1fb;
-  }
-  
-  .message{
-    right: 40px;
-  }
-  
-  .notif{
-    left: 40px;
-  }
-  
-  .pic{
-    width: 150px;
-    height: 150px;
-    margin: auto;
-    margin-bottom: 20px;
-    border: 2px solid #0099F7;
-    border-radius: 50%;
-    padding: 8px;
-    position: relative;
-  }
-  
-  .pic:after{
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    border: 1px solid  #F11712;
-    left: 0;
-    top: 0;
-    box-sizing: border-box;
-    border-radius: 50%;
-    animation: wave 1.5s infinite linear;
-  }
-  
-  @keyframes wave {
-    to{
-      transform: scale(1.5);
-      opacity: 0;
-    }
-  }
-  
-  .pic img{
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-  }
-  
-  .name{
-    color: #f1f1f1;
-    font-size: 20px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
-  
-  .tag{
-    font-size: 18px;
-    color: white;
-  }
-  
-  .bottom-section{
-    background: #f1f1f1;
-    padding: 36px 5px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 10px;
-    text-align: center;
-    height: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .border{
-    width: 1px;
-    height: 20px;
-    background: #bbb;
-    margin: 0 30px;
-  }
-  
-  h1.goaltitle {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
-    color: whitesmoke;
-    padding: 10px;
-  }
+  width: 85%;
+  height: 380px;
+  border-radius: 50px;
+  margin-left: 20px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  /* box-shadow: 0 0 10px #00000070; */
+  align-items: center;
+  box-shadow: -2rem 2rem 2rem rgba(0, 0, 0, 0.2);
+}
 
-  
-  .social-media{
-    position: absolute;
-    width: 100%;
-    top: -30px;
-    left: 0;
-    z-index: 1;
-  }
-  
-  .social-media i{
-    width: 60px;
-    height: 60px;
-    background: #b71c1c;
-    border-radius: 50%;
-    color: #f1f1f1;
-    font-size: 20px;
-    line-height: 60px !important;
-    margin: 0 10px;
-    position: relative;
-  }
-  
-  .social-media i:after{
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: #b71c1c;
-    left: 0;
-    top: 0;
-    box-sizing: border-box;
-    border-radius: 50%;
-    z-index: -1;
-    transition: 0.4s linear;
-  }
-  
-  .social-media i:hover:after{
-    transform: scale(1.4);
+.top-section{
+  padding: 35px 10px;
+  background: #000000aa;
+}
+
+.message,.notif{
+  position: absolute;
+  top: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #82fbf1fb;
+}
+
+.message{
+  right: 40px;
+}
+
+.notif{
+  left: 40px;
+}
+
+.pic{
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  margin-bottom: 20px;
+  border: 2px solid #0099F7;
+  border-radius: 50%;
+  padding: 8px;
+  position: relative;
+}
+
+.pic:after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 1px solid  #F11712;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  animation: wave 1.5s infinite linear;
+}
+
+@keyframes wave {
+  to{
+    transform: scale(1.5);
     opacity: 0;
   }
-  
+}
 
-   .quotesSearch {
-    background-color: rgb(135, 203, 245, .9);
-    opacity: 3;
-    box-shadow: 0 0 10px #00000070;
-    border-radius: 10px;
-    padding: 5px;
-    margin: 15px;
-    min-height: 180px;
+.pic img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.name{
+  color: #f1f1f1;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.tag{
+  font-size: 18px;
+  color: white;
+}
+
+.bottom-section{
+  background: #f1f1f1;
+  padding: 36px 5px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  text-align: center;
+  height: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.border{
+  width: 1px;
+  height: 20px;
+  background: #bbb;
+  margin: 0 30px;
+}
+
+h1.goaltitle {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+  color: whitesmoke;
+  padding: 5px;
+}
+
+
+ .quotesSearch {
+  background-color: rgb(135, 203, 245, .9);
+  opacity: 3;
+  box-shadow: 0 0 10px #00000070;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 15px;
+  min-height: 180px;
+}
+
+.quotesList{
+  background-color: rgb(135, 203, 245, .9);
+  opacity: 3;
+  box-shadow: 0 0 10px #00000070;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 15px;
+  margin-right: 5px;
+  min-height: 180px;
+}
+.mdl-grid.profile-grid {
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+.goalsList {
+  background-color: rgb(135, 203, 245, .9);
+  opacity: 10;
+  box-shadow: 0 0 10px #00000070;
+  border-radius: 50px;
+  padding: 5px;
+  margin-top: 2px;
+  min-height: 365px;
+  max-height: 365px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.randomgoalsList {
+  background-color: rgba(135, 203, 245, .9);
+  opacity: .9;
+  box-shadow: 0 0 10px #00000070;
+  border-radius: 50px;
+  padding: 5px;
+  margin-top: 2px;
+  min-height: 365px;
+  max-height: 365px;
+  overflow-x: hidden;
+}
+.dynamicgoalsList {
+  background-color: rgba(231, 236, 240, 0.9);
+  opacity: 10;
+  box-shadow: 0 0 10px #00000070;
+  border-radius: 50px;
+  padding: 5px;
+  margin-top: 30px;
+  min-height: 370px;
+  max-height: 370px;
+  overflow-x: hidden;
+}
+
+  .mdl-cell.mdl-cell--6-col.dynamicgoalsList{
+    margin-left: 80px;
+    width: 40%;
   }
 
-  .quotesList{
-    background-color: rgb(135, 203, 245, .9);
-    opacity: 3;
-    box-shadow: 0 0 10px #00000070;
-    border-radius: 10px;
-    padding: 5px;
-    margin: 15px;
-    margin-right: 5px;
-    min-height: 180px;
-  }
+form.box.motivate{
+  margin-top: 200px;
+  padding: 50px;
+}
 
-  .goalsList {
-    background-color: rgb(135, 203, 245, .9);
-    opacity: 10;
-    box-shadow: 0 0 10px #00000070;
-    border-radius: 50px;
-    padding: 5px;
-    margin-top: 2px;
-    min-height: 365px;
-    max-height: 365px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
-  .randomgoalsList {
-    background-color: rgba(135, 203, 245, .9);
-    opacity: 10;
-    box-shadow: 0 0 10px #00000070;
-    border-radius: 50px;
-    padding: 5px;
-    margin-top: 2px;
-    min-height: 365px;
-    max-height: 365px;
-    overflow-x: hidden;
-  }
- 
-  
-  .findquote {
-    height: 30px;
-    font-size:30;
-    color: black;
-  }
+.findquote {
+  height: 30px;
+  font-size:30;
+  color: black;
+}
 
-  input.findquote {
-    color: black;
-  }
+input.findquote {
+  color: black;
+}
 
-  .button {
-    font-weight: bolder;
-    height: 40px; 
-    margin: 10px;
-    border-radius: 2em;
-    box-sizing: border-box;
-    text-decoration:none;
-    font-family:'Roboto',sans-serif;
-    font-weight:300;
-    color:#FFFFFF;
-    background-color:#b71c1c;
-    text-align:center;
-    transition: all 0.2s;
-  }
+.button {
+  font-weight: bolder;
+  height: 40px; 
+  margin: 10px;
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#FFFFFF;
+  background-color:#b71c1c;
+  text-align:center;
+  transition: all 0.2s;
+}
 
-  .button:hover{
-    /* background-color:#4095c6; */
-    border-color: rgba(255,255,255,1);
-  }
+.button:hover{
+  /* background-color:#4095c6; */
+  border-color: rgba(255,255,255,1);
+}
 
-  .random-quote{
-    background-color:  rgba(115, 63, 184, 0.9);
-    opacity: 3;
-    border: black 10px double;
-  box-shadow: 8px 8px #888888;
-  }
+.random-quote{
+  background: #59C173;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  opacity: 3;
+  border: black 10px solid;
+box-shadow: 8px 8px #888888;
+}
 
 .MuiTypography-root.MuiTypography-body1 {
-  font-size: 2rem;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  text-align: center;
-  color: antiquewhite;
-  text-shadow: 1.6px 2px rgb(22, 21, 21);
-  }
+font-size: 2rem;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-align: center;
+color: antiquewhite;
+text-shadow: 1.6px 2px rgb(22, 21, 21);
+}

@@ -51,7 +51,7 @@ function App({ classes }) {
 
   return (
     
-    <Grid className={classes.container} className="randomgoalsList"  justify="center" container>
+    <Grid className="{classes.container} randomgoalsList"  justify="center" container>
       <Grid item>
       <h3 className="DevName" align="center">Get Motivated</h3> 
             <hr></hr>
