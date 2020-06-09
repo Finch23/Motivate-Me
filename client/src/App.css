@@ -1,30 +1,22 @@
 .header-color {
-  background: #0099F7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #F11712, #0099F7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #F11712, #0099F7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
-
+  background: #59C173;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
 }
-
+ 
 .footer-color {
-  background: #0099F7;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #F11712, #0099F7);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #F11712, #0099F7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
+  background: #59C173;  
+  background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173);
+  background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173); 
+position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%
 }
-
-
-.mdl-layout__content {
-  margin: 0;
-  /* margin-top: -210px; */
-  font-family: sans-serif;
-  background: url(https://images.pexels.com/photos/531062/pexels-photo-531062.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat;
-  background-size: cover;
-  background-color: rgba(156, 20, 20, 0.6);
-
-}
-
+ 
+ 
+ 
 .mdl-card__supporting-text {
   font-family: 'oxygen', sans-serif;
   color: rgb(32, 2, 2);
@@ -32,15 +24,22 @@ background: linear-gradient(to left, #F11712, #0099F7); /* W3C, IE 10+/ Edge, Fi
   padding: 5px;
   justify-content: center;
 }
-
-
+ 
+ 
 h3.DevName {
   font-family: 'Satisfy', cursive;
   color: #F11712;
   padding: 0;
   margin: 5px;
 }
-
+ 
+.details-title{
+  font-family: 'Satisfy', cursive;
+  color: #F11712;
+  padding: 0px;
+  margin: 5px;
+}
+ 
 .contacts-grid {
   margin: 0;
   /* margin-top: -210px; */
@@ -48,18 +47,22 @@ h3.DevName {
   background-size: cover;
   background-color: rgba(255,255,255,0.6);
 }
-
+ 
 .App {
   font-family: sans-serif;
   text-align: center;
 }
-
+ 
 .zindex1{
   z-index: 1000;
  
 }
-
-
+ 
+a {
+  font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #b71c1c;
+}
 
 
 

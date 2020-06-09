@@ -59,7 +59,7 @@ function Login({login}) {
                     </input>
                 <br></br>
 
-                <button className="input-text" onClick={handleSubmit}>Login</button>
+                <button className="loginBTN" onClick={handleSubmit}>Login</button>
 
                 <br></br>
 

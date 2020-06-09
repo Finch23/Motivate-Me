@@ -14,13 +14,13 @@ class Contact extends Component {
             <div className="projects-grid">
             {/* Christian Sanchez*/}
             <Card shadow={5} style={{width: '580px', minWidth: '580', margin: 'auto', borderRadius: '50px'}}>
-                <CardTitle style={{color: '#000000', height: '260px', background: 'url(https://avatars2.githubusercontent.com/u/58318559?s=400&u=63867c02cab88408b90435182d87d4569f8095f2&v=4)center /auto'}}> 
+                <CardTitle style={{color: '#000000', height: '220px', background: 'url(https://avatars2.githubusercontent.com/u/58318559?s=400&u=63867c02cab88408b90435182d87d4569f8095f2&v=4)center /auto'}}> 
                 
                 </CardTitle>
 
                 <CardText> 
                 <h3 className="DevName">Christian Sanchez</h3>
-                I am a full stack web developer with experience in Sales and Health Care. As a person with a natural creativity, I have always loved exhibiting my skills in the form of music and art as a hobbie. At times, my creativity can be used in practical problem solving situations. As I began to learn about the aspects of coding, I realized that creativity and problem solving are the core elements of the career. Thus, I embarked on learning the skills need to be a proficent developer. From front end to back end, I have learned multiple of skills that lead to creating beautiful and functional applications. My journey has taken me from graduating East Carolina University in Communications, to creating proficent and dynamic applications. The road will only become more intriguing as the oppurtunites come to light and my skills are further exhibited.
+                I am a full stack web developer with experience in Sales and Health Care. As a person with a natural creativity, I have always loved exhibiting my skills in the form of music and art as a hobbie. I've realized that creativity and problem solving are the core elements of coding. From front end to back end, I have learned multiple of skills that lead to creating beautiful and functional applications. My journey has taken me from graduating East Carolina University in Communications, to creating proficent and dynamic applications. The road will only become more intriguing as the oppurtunites come to light and my skills are further exhibited.
                 </CardText>
 
                 <CardActions border>

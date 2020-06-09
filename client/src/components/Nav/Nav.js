@@ -33,11 +33,11 @@ const Nav = (props) => {
           <Navigation>
           {/* <Link to="/">Home</Link> */}
           <Link to="/profile">Profile</Link>
-          <Link to="/addquote">My Goals</Link>
-          <Link to="/quotes">My Quotes</Link>
+          <Link to="/newgoal">My Goals</Link>
+          <Link to="/quotes">My Videos</Link>
               <div className="float-right">
                     {greeting}&emsp;&emsp;  
-                  <a href="/" className="logout" style={{color:"white"}} onClick={props.logout}>Logout</a>
+                  <Link to="/" className="logout" style={{color:"white"}} onClick={props.logout}>Logout</Link>
               </div>
           </Navigation>
         </Header>
