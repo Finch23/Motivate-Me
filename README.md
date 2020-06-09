@@ -1,68 +1,56 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Motivate Me
 
-## Available Scripts
+#### About:
 
-In the project directory, you can run:
+Motivate Me
 
-### `npm start`
+An application used to help individuals try to motivate themselves by adding and fufilling goals and finding helpful quotes and videos. 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Project Status
+Almost Complete, still working on some API and design issues.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+This project is currently in development. Users can create an account and look at quotes. 
 
-### `npm test`
+## Project Screen Shot(s)   
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[ SCREEN SHOT ]
 
-### `npm run build`
+[ SCREEN SHOT ]
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation and Setup Instructions 
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Installation:
 
-### `npm run eject`
+`npm install`  
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+To Run Test Suite:  
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`npm test`  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To Start Server:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+`npm start`  
 
-## Learn More
+To Visit App:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`localhost:3000` 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Developers
 
-### Code Splitting
+**Tyler Buck**
+- Github : [@thetylerb](https://github.com/thetylerb)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+**Nicholas Finch**
+- Github : [@Finch23](https://github.com/Finch23)
 
-### Analyzing the Bundle Size
+**Omar Ibrahim**
+- Github : [@abdallah723](https://github.com/abdallah723)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+**Jasmin Rowdy**
+- Github : [@jrowdy](https://github.com/jrowdy)
 
-### Making a Progressive Web App
+**Christian Sanchez**
+- Github : [@cas81695](https://github.com/cas81695)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
