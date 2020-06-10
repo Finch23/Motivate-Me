@@ -1,68 +1,60 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Motivate Me
 
-## Available Scripts
+#### About:
 
-In the project directory, you can run:
+Motivate Me
 
-### `npm start`
+Motivate Me is an application that lets the user create an account and then log in. Once the user logs in, they can view randomly generated quotes, look up helpful videos based on input and create, modify and delete goals.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Project Screen Shot(s)   
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<img src="https://i.ibb.co/H4Sbptd/screen-shot-2020-06-09-at-12-29-20-pm-1.png" alt="screen-shot-2020-06-09-at-12-29-20-pm-1" border="0">
 
-### `npm test`
+## Installation and Setup Instructions 
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
 
-### `npm run build`
+Installation:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`npm install`  
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+To Run Test Suite:  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`npm test`  
 
-### `npm run eject`
+To Start Server and Client:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+`npm start`  
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To Visit App:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+`localhost:3000` 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Developers
 
-## Learn More
+**Tyler Buck**
+- Github : [@thetylerb](https://github.com/thetylerb)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Nicholas Finch**
+- Github : [@Finch23](https://github.com/Finch23)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Omar Ibrahim**
+- Github : [@abdallah723](https://github.com/abdallah723)
 
-### Code Splitting
+**Jasmin Rowdy**
+- Github : [@jrowdy](https://github.com/jrowdy)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+**Christian Sanchez**
+- Github : [@cas81695](https://github.com/cas81695)
 
-### Analyzing the Bundle Size
+## Contact Us
+<img src= "https://avatars0.githubusercontent.com/u/57814333?s=400&u=cbb62b2755a93573bf3414c3f92e10e8f1868368&v=4" style="border-radius: 18px" width="30px" style = "border: 2px solid green" /> Email : [s.tyler.buck@gmail.com](thetylerb)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Making a Progressive Web App
+<img src= "https://avatars2.githubusercontent.com/u/57764795?s=400&u=4be80bacf42ba1b0d47a387ebdf1df1081456dcd&v=4" style="border-radius: 18px" width="30px" style = "border: 2px solid green" /> Email : [nicfinch223@gmail.com](finch23)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+<img src= "https://avatars1.githubusercontent.com/u/57788908?v=4" style="border-radius: 18px" width="30px" style = "border: 2px solid green" /> Email : [ibrham11@gmail.com](abdallah723)
 
-### Advanced Configuration
+<img src= "https://avatars2.githubusercontent.com/u/58674083?s=400&u=a55cb1ba0b03ef74eae66a76eb154b83a602cc50&v=4" style="border-radius: 18px" width="30px" style = "border: 2px solid green" /> Email : [jasminrowdy@gmail.com](jrowdy)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<img src= "https://avatars1.githubusercontent.com/u/58318559?v=4" style="border-radius: 18px" width="30px" style = "border: 2px solid green" /> Email : [cas81695@gmail.com](cas81695)
