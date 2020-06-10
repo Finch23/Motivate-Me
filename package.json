@@ -3,6 +3,26 @@
   "version": "1.0.0",
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "server/server.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server/server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
+  },
+  "engines": {
+    "node": "8.11.3",
+    "npm": "5.6.x",
+    "yarn": "1.10.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.11.0"
+  },
   "dependencies": {
     "@material-ui/core": "^4.10.1",
     "axios": "^0.19.2",
@@ -21,21 +41,5 @@
     "passport-local-mongoose": "^6.0.1",
     "react": "^16.13.1",
     "react-router-dom": "^5.2.0"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server/server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Finch23/Motivate-Me.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Finch23/Motivate-Me/issues"
-  },
-  "homepage": "https://github.com/Finch23/Motivate-Me#readme"
+  }
 }
