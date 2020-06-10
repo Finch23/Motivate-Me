@@ -46,7 +46,7 @@ if (process.env.NODE_ENV === 'production') {
 		res.sendFile(path.join(__dirname, '../client/build/')); 
 	 });
 	}
-
+	
 // Add routes, both API and view
 app.use(routes);
 
