@@ -2,7 +2,7 @@ const router = require('express').Router();
 const axios = require ('axios');
 const API_KEY = process.env.REACT_APP_API_KEY;
 
-
+/*
 router.get('/', (res, err) => {
     console.log('Logged from quotesAPI file from server')
 
@@ -16,7 +16,11 @@ router.get('/', (res, err) => {
         .catch((err)=>{
         console.log(err)
         })
-})
+});*/
+
+router.get('/config', (req, res) => {
+    res.json({config: { key: process.env.GOOGLE_API_KEY }});
+});
 
 
 module.exports = router;
