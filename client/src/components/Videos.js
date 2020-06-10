@@ -33,7 +33,7 @@ async function handleSubmit(searchTerm) {
     params: {
       part: "snippet",
       maxResults: 5,
-      key: process.env.API_KEY,
+      key: 'AIzaSyCrboNppX-p6YgZAxayNihhUf4MFUlrjh0',
       q: searchTerm,
     }
   });
