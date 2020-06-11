@@ -4,9 +4,7 @@ import "../AUTH/Login.css"
 import Profile from '../Profile/profile';
 
 
-
 class Motivate extends Component {
-    
       render() {
         return (
           <div>
@@ -19,7 +17,6 @@ class Motivate extends Component {
                     <input className="input-text" type="submit" name="" value="Submit New Goal"></input>
                 <br></br>
             </form>
-            
           </div>
         );
       }
