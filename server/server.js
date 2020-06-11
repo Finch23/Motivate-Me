@@ -13,7 +13,7 @@ const dbConnection = require('./db'); // loads our connection to the mongo datab
 const routes = require("./routes");
 const passport = require('./passport');
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 // Middlewares
 app.use(morgan('dev'));
@@ -26,18 +26,10 @@ app.use(session({
   saveUninitialized: false
 }));
 
-// test change
-
 // Passport
 app.use(passport.initialize());
 app.use(passport.session()); // will call the deserializeUser
 
-// If its production environment!
-// if (process.env.NODE_ENV === 'production') {
-// 	const path = require('path');
-// 	console.log('YOU ARE IN THE PRODUCTION ENV');
-// 	app.use('/static', express.static(path.join(__dirname, '/client/build/static')));
-// }
 if (process.env.NODE_ENV === 'production') {  
 	const path = require('path'); 
 	console.log('YOU ARE IN THE PRODUCTION ENV'); 

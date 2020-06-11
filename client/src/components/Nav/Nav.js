@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { Link } from 'react-router-dom';
-import { Layout, Header, Navigation} from 'react-mdl';
+import { Layout, Header, Navigation, Drawer} from 'react-mdl';
 import MMlogo2 from '../../pages/AUTH/assets/MMlogo2.png';
 import './Nav.css';
 
@@ -41,6 +41,14 @@ const Nav = (props) => {
               </div>
           </Navigation>
         </Header>
+
+        <Drawer className="header-color" title="Motivate Me">
+            <Navigation>
+              <Link to="/profile">Profile</Link>
+              <Link to="/newgoal">My Goals</Link>
+              <Link to="/quotes">My Videos</Link>
+            </Navigation>
+        </Drawer>
 
         </Layout>
      </div>
