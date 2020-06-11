@@ -129,7 +129,6 @@ class NewGoal extends Component {
  
                 </Grid>
             </div>
-     
         );
     }
 }

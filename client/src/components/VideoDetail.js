@@ -2,6 +2,7 @@ import React from "react";
 
 import { Paper, Typography } from "@material-ui/core";
 
+// The URL for youtube is being called and the ID is what the user puts in the search bar
 export default ({ video }) => {
   if (!video) return <div>Loading...</div>;
 

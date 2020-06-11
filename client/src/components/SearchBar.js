@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Paper, TextField } from "@material-ui/core";
 
+// User's input is used to generate a search term for the API to use to search Videos
 export default ({ onSubmit }) => {
   const [searchTerm, setSearchTerm] = useState("");
 
