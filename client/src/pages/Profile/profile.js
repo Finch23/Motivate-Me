@@ -16,11 +16,9 @@ class Profile extends Component {
                          
                     <Cell col={7}> <div> <QuotesList/> </div> 
                     </Cell>
-
                 </Grid>
-               </div>     
-        )     
-            
+            </div>     
+        )            
     }
 }
 export default Profile;

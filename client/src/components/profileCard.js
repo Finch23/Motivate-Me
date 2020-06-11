@@ -3,6 +3,8 @@ import '../pages/Profile/Profile.css';
 import createAvatarComponent from 'react-avatar/es/avatar';
 import GithubSource from 'react-avatar/es/sources/Github';
 
+
+// Uses React-Avatar to pull the users picture from Github. More sources (Gmail, facebook, etc) will be supported in the future
 const Avatar = createAvatarComponent({
     sources: [ GithubSource ]
 });

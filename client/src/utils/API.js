@@ -25,29 +25,22 @@ export default {
     return axios.put("/api/goal/" + id, goalData);
   },
 
-  
-  // --------Quotes(FROM API)--------------
-  // Gets all quotes from API using search query
-  // getApiQuotes: function(query) {
-  //   console.log("API Query: " + query);
-  //   return axios.get("/api/quotesapi", { params: { q: query } });
-  // },
+   // --------FAVORITE VIDEOS-------------
+  //  These will be used for future development for favorite videos.
 
-   
-   // --------FAVORITE QUOTES-------------
-  // Gets all favorite quotes
+  // Gets all favorite Videos
   getFaves: function(username) {
     return axios.get(`/api/faves/username/${username}`);
   },
-  // Gets the favorite quote with the given id
+  // Gets the favorite video with the given id
   getFave: function(id) {
     return axios.get("/api/faves/" + id);
   },
-  // Deletes the favorite quote with the given id
+  // Deletes the favorite video with the given id
   deleteFave: function(id) {
     return axios.delete("/api/faves/" + id);
   },
-  // Saves a favorite quote to the database
+  // Saves a favorite video to the database
   saveFave: function(quoteData) {
     console.log(quoteData);
     return axios.post("/api/faves", quoteData);

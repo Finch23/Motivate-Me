@@ -11,12 +11,13 @@ export default () => {
   const [selectedVideo, setSelectedVideo] = useState(null);
   const [apiKey, setApiKey] = useState('');
 
+  // Making a call to the API for Heroku
   useEffect(() => {
     fetch('/api/videosapi/config')
       .then(response => response.json())
       .then(json => setApiKey(json.config.key));
   }, []);
-
+  // When a call is made, this set the parameters and the number of videos returning
   async function handleSubmit(searchTerm) {
     const { data: { items: videos } } = await youtube.get("search", {
       params: {
