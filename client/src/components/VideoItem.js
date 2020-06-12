@@ -1,20 +1,3 @@
-// import React from "react";
-// import { Grid, Card, Typography } from "@material-ui/core";
-
-// export default ({ video, onVideoSelect }) => {
-//   return (
-//     <Grid item xs={12}>
-//       <Card style={{ display: "flex", alignItems: "center", cursor: "pointer" }} onClick={() => onVideoSelect(video)} >
-//         <img style={{ marginRight: "20px" }} alt="thumbnail" src={video.snippet.thumbnails.medium.url} />
-//         <br></br>
-//         <Typography variant="subtitle1">
-//           <b>{video.snippet.title}</b>
-//         </Typography>
-//       </Card>
-//     </Grid>
-//   );
-// }
-
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';

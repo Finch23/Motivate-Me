@@ -13,7 +13,7 @@ export default ({ video }) => {
       <Paper elevation={6}>
         <iframe
           frameBorder="0"
-          height="100%"
+          height="500px"
           width="100%"
           title="Video Player"
           src={videoSrc}

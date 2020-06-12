@@ -87,12 +87,6 @@ class App extends Component {
 								  	<Route exact path="/newgoal" component={() => <NewGoal user={this.state.user}/>} />
 								  	<Route path="/contact" component={Contact} />
 							  	</Switch>
-
-			  					{/* <div className="footer-links">
-				  					<Footer className="footer-color">
-					  					<Link to="/contact"  style={{ color: "white", textDecoration: 'none' }}>About the Developers</Link>
-				  					</Footer>
-			  					</div> */}
 			  
 							</div>
 					</div>
