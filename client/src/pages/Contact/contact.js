@@ -131,7 +131,7 @@ class Contact extends Component {
                     </CardTitle>
                         <CardText>
                             <h3 className="DevName">Tyler Buck</h3>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                            I am a full stack web developer with years of experience with sales and music. I believe that with my mixed background that I will bring a valuable point of view when it comes to UI. I taught myself how to produce music so I love a good challenge. Coding has been a massive challenge that has proven extremely rewarding. I LOVE learning more about it and being able to accomplish more than I was able to yesterday.
                         </CardText>
 
                         <CardActions border>
