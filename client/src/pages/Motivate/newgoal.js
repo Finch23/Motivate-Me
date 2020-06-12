@@ -103,11 +103,11 @@ class NewGoal extends Component {
                  
                     <Cell col={6}> 
  
-                    <div className="goalsList"> 
+                    <div className="goalsList zindex1"> 
                         <h3 align="center" className="DevName">Saved Goals</h3>
                         <hr></hr>
                         {this.state.Goal ? (
-                  <List>
+                  <List className="zindex1">
                     { this.state.Goal && this.state.Goal.map(Goal => {
                       return (
                         <ListItem key={Goal._id}>
