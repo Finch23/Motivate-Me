@@ -1,16 +1,28 @@
 .profile-card{
-  width: 85%;
   height: 400px;
   border-radius: 50px;
   margin-left: 20px;
   overflow: hidden;
   text-align: center;
   position: relative;
-  /* box-shadow: 0 0 10px #00000070; */
-  align-items: center;
   box-shadow: -2rem 2rem 2rem rgba(0, 0, 0, 0.2);
+  /* justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  min-height: 400px;
+  max-height:400px;
+  border-radius: 50px; */
 }
 
+.prof-card-title{
+  font-family: 'Satisfy', cursive;
+  color: #5D26C1;
+  padding: 0;
+  margin: 5px;
+  font-size: 30px;
+}
 .top-section{
   padding: 35px 10px;
   background: #000000aa;

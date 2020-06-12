@@ -14,8 +14,8 @@ class Contact extends Component {
             <Grid>
                 <Cell col={12}>
                 {/* Christian Sanchez*/}
-                <Card shadow={5} style={{width: '580px', minWidth: '580', margin: 'auto', borderRadius: '50px'}}>
-                    <CardTitle style={{color: '#000000', height: '220px', background: 'url(https://avatars2.githubusercontent.com/u/58318559?s=400&u=63867c02cab88408b90435182d87d4569f8095f2&v=4)center /auto'}}> 
+                <Card shadow={5} style={{minWidth: '52%', margin: 'auto', borderRadius: '50px'}}>
+                    <CardTitle style={{color: '#000000', minHeight: '220px', background: 'url(https://avatars2.githubusercontent.com/u/58318559?s=400&u=63867c02cab88408b90435182d87d4569f8095f2&v=4)center /auto'}}> 
                 
                     </CardTitle>
 
@@ -52,13 +52,13 @@ class Contact extends Component {
             <Grid>
                 <Cell col={12}>
                 {/*Jasmin Rowdy*/}
-                <Card shadow={5} style={{width: '580px', minWidth: '580px', margin: 'auto', borderRadius: '50px'}}>
-                    <CardTitle style={{color: '##000000', height: '230px', background: 'url(https://avatars0.githubusercontent.com/u/58674083?s=460&u=be994ec86c3be372599765e7a2335353a0d95a79&v=4)center /auto'}}> 
+                <Card shadow={5} style={{minWidth: '52%', margin: 'auto', borderRadius: '50px'}}>
+                    <CardTitle style={{color: '##000000', minHeight:'220px', background: 'url(https://avatars0.githubusercontent.com/u/58674083?s=460&u=be994ec86c3be372599765e7a2335353a0d95a79&v=4)center /auto'}}> 
                     </CardTitle>
 
                         <CardText> 
                             <h3 className="DevName">Jasmin Rowdy</h3>
-                            I am a North Carolina State University alumni, eighth year educator and a full stack web developer.  I am also a Google for Education Certified Trainer and I train other educators how to use Google tools in their classroom by leading local and state-level workshops. I love music, photography and painting all with strong attention to detail so, naturally, front end development is my first love!  I hope to design, clean, unique and efficient sites/applications.
+                            I am a North Carolina State University alumni, eighth year educator and a full stack web developer.  I am also a Google for Education Certified Trainer and I train other educators how to use Google tools in their classroom by leading local and state-level workshops. I love music, photography and painting all with strong attention to detail so, naturally, front end development is my first love!  I hope to design clean, unique and efficient sites/applications.
                         </CardText>
 
                         <CardActions border>
@@ -88,13 +88,13 @@ class Contact extends Component {
         <Grid>
             <Cell col={12}>
                 {/* Omar Ibrahim*/}
-                <Card shadow={5} style={{width: '580px', minWidth: '580px', margin: 'auto', borderRadius: '50px'}}>
-                        <CardTitle style={{color: '##000000', height: '230px', background: 'url(https://avatars3.githubusercontent.com/u/57788908?s=400&u=b055c58257b8c0c8ba11ee496a705ae4bc29a26b&v=4)center /contain'}}> 
+                <Card shadow={5} style={{minWidth: '52%', margin: 'auto', borderRadius: '50px'}}>
+                        <CardTitle style={{color: '##000000', minHeight: '230px', background: 'url(https://avatars3.githubusercontent.com/u/57788908?s=400&u=b055c58257b8c0c8ba11ee496a705ae4bc29a26b&v=4)center /contain'}}> 
                     </CardTitle>
 
                     <CardText>  
                         <h3 className="DevName">Omar Ibrahim</h3> 
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        Hi, my name is Abd Alla Ibrahim, Omar for short. I am a recent graduate from North Carolina State University in Psychology, and soon to be a graduate from the UNC Chapel Hill Coding Bootcamp. I want to pursue a masters degree in Industrial Organizational Psychology focusing on balancing work and personal life for individuals. I decided to take this bootcamp so I can work in the field and understand how the industry work so I can better pursue my future career and to explore more career options. I enjoyed the bootcamp because it presented me with a new challenge and it made view things from a new perspective.
                     </CardText>
 
                     <CardActions border>
@@ -126,8 +126,8 @@ class Contact extends Component {
         <Grid>
             <Cell col={12}>
                 {/* Tyler Buck*/}
-                <Card shadow={5} style={{width: '580px', minWidth: '580px', margin: 'auto', borderRadius: '50px'}}>
-                    <CardTitle style={{color: '#fff', height: '230px', background: 'url(https://avatars0.githubusercontent.com/u/57814333?s=460&u=cbb62b2755a93573bf3414c3f92e10e8f1868368&v=4)center /auto'}}> 
+                <Card shadow={5} style={{minWidth: '52%', margin: 'auto', borderRadius: '50px'}}>
+                    <CardTitle style={{color: '#fff', minHeight: '230px', background: 'url(https://avatars0.githubusercontent.com/u/57814333?s=460&u=cbb62b2755a93573bf3414c3f92e10e8f1868368&v=4)center /auto'}}> 
                     </CardTitle>
                         <CardText>
                             <h3 className="DevName">Tyler Buck</h3>
@@ -164,8 +164,8 @@ class Contact extends Component {
             <Grid>
                 <Cell col={12} tablet={8} phone={4}>
                     {/* Nicholas Finch*/}
-                        <Card shadow={5} style={{width: '580px', minWidth: '580px', margin: 'auto', borderRadius: '50px'}}>
-                            <CardTitle style={{color: '##000000', height: '230px', background: 'url(https://avatars2.githubusercontent.com/u/57764795?s=460&u=4be80bacf42ba1b0d47a387ebdf1df1081456dcd&v=4)center /auto'}}> 
+                        <Card shadow={5} style={{minWidth: '52%', margin: 'auto', borderRadius: '50px'}}>
+                            <CardTitle style={{color: '##000000', minHeight: '230px', background: 'url(https://avatars2.githubusercontent.com/u/57764795?s=460&u=4be80bacf42ba1b0d47a387ebdf1df1081456dcd&v=4)center /auto'}}> 
                             </CardTitle>
 
                             <CardText> 
@@ -202,11 +202,11 @@ class Contact extends Component {
         return(
             <div className="category-tabs">
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId})} ripple > 
-                    <Tab>Christian Sanchez</Tab>
-                    <Tab>Jasmin Rowdy</Tab>
-                    <Tab>Omar Ibrahim</Tab>
-                    <Tab>Tyler Buck</Tab>
-                    <Tab>Nicholas Finch</Tab>
+                    <Tab>Christian</Tab>
+                    <Tab>Jasmin</Tab>
+                    <Tab>Omar</Tab>
+                    <Tab>Tyler</Tab>
+                    <Tab>Nicholas</Tab>
                     
                 </Tabs>
 

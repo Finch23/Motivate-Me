@@ -30,7 +30,7 @@ class ProfileCard extends Component {
                         <div className="bottom-section">
                                 {/* Bottom, white section of the profile card */}
                                 <div className="bottom-section">
-                                <   h3 align="center" className="DevName">What are you motivated to do today?</h3>
+                                <h3 align="center" className="prof-card-title">What are you motivated to do today?</h3>
 
                                 </div>
                     </div>
