@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Redirect, Link } from 'react-router-dom';
+import { Grid, Cell} from 'react-mdl';
 import './Login.css';
 import '../Motivate/Motivate.css';
 import BackgroundSlideshow from 'react-background-slideshow';

@@ -28,9 +28,10 @@ const Nav = (props) => {
   
   return (
     <div style={{height: '100px'}}>
-      <Layout>
+      
           <Header className="header-color" title="Motivate Me" scroll>
           <div><img  className="logo" src={MMlogo2} alt="avatar-placeholder"></img></div>
+           
             <Navigation >
               <Link to="/profile">Profile</Link>
               <Link to="/newgoal">Goals</Link>
@@ -41,7 +42,7 @@ const Nav = (props) => {
                   <Link to="/" className="logout" style={{color:"white"}} onClick={props.logout}>Logout</Link>
                 </div>
            </Navigation>
-        </Header>
+            
         <Drawer className="header-color" title="Motivate Me">
             <Navigation>
               <Link to="/profile">Profile</Link>
@@ -51,7 +52,9 @@ const Nav = (props) => {
               <Link to="/" className="logout" style={{color:"white"}} onClick={props.logout}>Logout</Link>
             </Navigation>
         </Drawer>
-        </Layout>
+        </Header>
+       
+      
      </div>
 
   )
