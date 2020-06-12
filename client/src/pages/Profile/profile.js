@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
 import '../Profile/Profile.css'
 import ProfileCard from '../../components/profileCard';
-import QuotesList from '../../components/quotesList';
+import GoalsList from '../../components/goalsList';
 
 class Profile extends Component {
     
@@ -14,7 +14,7 @@ class Profile extends Component {
                     <div className="profileCard"> <ProfileCard user={this.props.user}/> </div>
                     </Cell>
                          
-                    <Cell col={7}> <div> <QuotesList/> </div> 
+                    <Cell col={7}> <div> <GoalsList/> </div> 
                     </Cell>
                 </Grid>
             </div>     

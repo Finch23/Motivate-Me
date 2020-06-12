@@ -26,8 +26,6 @@ app.use(session({
   saveUninitialized: false
 }));
 
-// test change
-
 // Passport
 app.use(passport.initialize());
 app.use(passport.session()); // will call the deserializeUser

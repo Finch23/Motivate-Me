@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "./App.css";
-import { Route, Link, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Login from '../src/pages/AUTH/Login';
 import Signup from '../src/pages/AUTH/Signup';
 import Nav from './components/Nav/Nav';
@@ -10,7 +10,7 @@ import Profile from './pages/Profile';
 import Detail from './pages/Detail/Detail';
 import NewGoal from './pages/Motivate/newgoal';
 import AUTH from './utils/AUTH';
-import { Footer, Layout} from 'react-mdl';
+import { Layout} from 'react-mdl';
 
 
 class App extends Component {
@@ -72,46 +72,42 @@ class App extends Component {
   
 	  render() {
 		  return (
-			  <Layout className="">
-			  <div className="mdl-layout__content">
-		  { this.state.loggedIn && (
-			<div>
-				
-			  <Nav className="header-color" user={this.state.user} logout={this.logout}/>
-			  
-			  <div>
-							    <Switch>
-									<Route exact path="/" component={() => <Profile user={this.state.user}/>} />
+			<Layout>
+				<div className="mdl-layout__content">
+					{ this.state.loggedIn && (
+		 				 <div>
+							<Nav className="header-color" user={this.state.user} logout={this.logout}/>
+								<div>
+							 	 <Switch>
+								 	<Route exact path="/" component={() => <Profile user={this.state.user}/>} />
 									<Route exact path="/profile" component={() => <Profile user={this.state.user}/>} />
-									<Route exact path="/quotes" component={(props) => <Videos user={this.state.user} {...props}/>} />
-									<Route exact path="/goal/:id" component={(props) => <Detail user={this.state.user} {...props}/>} />
+								  	<Route exact path="/quotes" component={(props) => <Videos user={this.state.user} {...props}/>} />
+								  	<Route exact path="/goal/:id" component={(props) => <Detail user={this.state.user} {...props}/>} />
 
-									<Route exact path="/newgoal" component={() => <NewGoal user={this.state.user}/>} />
-									<Route path="/contact" component={Contact} />
-								</Switch>
+								  	<Route exact path="/newgoal" component={() => <NewGoal user={this.state.user}/>} />
+								  	<Route path="/contact" component={Contact} />
+							  	</Switch>
 
-				<div className="footer-links">
-					<Footer className="footer-color">
-						<Link to="/contact"  style={{ color: "white", textDecoration: 'none' }}>About the Developers</Link>
-					</Footer>
-			    </div>
-				
-			  </div>
+			  					{/* <div className="footer-links">
+				  					<Footer className="footer-color">
+					  					<Link to="/contact"  style={{ color: "white", textDecoration: 'none' }}>About the Developers</Link>
+				  					</Footer>
+			  					</div> */}
+			  
+							</div>
+					</div>
+				)}
+				{ !this.state.loggedIn && (
+		  		<div>
+					<Route exact path="/" component={() => <Login login={this.login}/>} />
+					<Route exact path="/profile" component={() => <Login login={this.login}/>} />
+					<Route exact path="/signup" component={Signup} />
+		  		</div>
+				)}
 			</div>
-		  )}
-		  { !this.state.loggedIn && (
-			<div>
-				
+		</Layout>
+		)
+	}
+}
 
-			  <Route exact path="/" component={() => <Login login={this.login}/>} />
-			  <Route exact path="/profile" component={() => <Login login={this.login}/>} />
-			  <Route exact path="/signup" component={Signup} />
-			</div>
-		  )}
-			  </div>
-			  </Layout>
-		  )
-	  }
-  }
-  
-  export default App;
+export default App;
