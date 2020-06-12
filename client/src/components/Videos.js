@@ -22,7 +22,7 @@ export default () => {
     const { data: { items: videos } } = await youtube.get("search", {
       params: {
         part: "snippet",
-        maxResults: 10,
+        maxResults: 20,
         key: process.env.REACT_APP_API_KEY || apiKey,
         q: searchTerm,
       }
@@ -39,10 +39,10 @@ export default () => {
           <Grid item xs={12}>
             <SearchBar onSubmit={handleSubmit} />
           </Grid>
-          <Grid item xs={12} sm={8} md={8}>
+          <Grid item xs={12} sm={12} md={12}>
             <VideoDetail video={selectedVideo} />
           </Grid>
-          <Grid item xs={12} sm={4} md={4}>
+          <Grid item xs={12} sm={12} md={12}>
             <VideoList videos={videos} onVideoSelect={setSelectedVideo} />
           </Grid>
         </Grid>

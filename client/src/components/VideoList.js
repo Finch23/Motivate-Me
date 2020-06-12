@@ -1,6 +1,18 @@
 import React from "react";
-import { Grid } from "@material-ui/core";
+import { makeStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
 import VideoItem from "./VideoItem";
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+  },
+}));
 
 export default ({ videos, onVideoSelect }) => {
   const listOfVideos = videos.map(video => (
@@ -10,10 +22,21 @@ export default ({ videos, onVideoSelect }) => {
       video={video}
     />
   ));
+  const classes = useStyles();
 
   return (
-    <Grid container spacing={10}>
-      {listOfVideos}
-    </Grid>
+    <div className={classes.root}>
+      <Grid container spacing={4}>
+        <Grid item xs>
+        {listOfVideos}
+        </Grid>
+        <Grid item xs>
+          {listOfVideos}
+        </Grid>
+        <Grid item xs>
+          {listOfVideos}
+        </Grid>
+      </Grid>
+    </div>
   );
 }
