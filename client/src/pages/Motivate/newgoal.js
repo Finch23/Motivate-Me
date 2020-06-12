@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import '../../App.css';
 import '../Motivate/Motivate.css';
-import { Grid, Cell, List, ListItem} from 'react-mdl';
+import { Grid, Cell, List, ListItem } from 'react-mdl';
+import { Link } from 'react-router-dom';
 import API from "../../utils/API";
 import DeleteBtn from "../../components/DeleteBtn";
  
@@ -110,11 +111,11 @@ class NewGoal extends Component {
                     { this.state.Goal && this.state.Goal.map(Goal => {
                       return (
                         <ListItem key={Goal._id}>
-                          <a href={"/goal/" + Goal._id}>
+                          <Link to={"/goal/" + Goal._id}>
                             <strong>
                               {Goal.title}
                             </strong>
-                          </a>
+                          </Link>
                           &nbsp;
                           <DeleteBtn type="submit" onClick={() => this.deleteGoal(Goal._id)} />
                         </ListItem>
