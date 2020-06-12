@@ -7,3 +7,6 @@ height: 12%;
 width: 12%;
 float: left;
   } 
+.mdl-layout__drawer-button {
+  background: #5D26C1;
+}

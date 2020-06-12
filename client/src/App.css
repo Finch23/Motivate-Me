@@ -28,14 +28,14 @@ position: fixed;
  
 h3.DevName {
   font-family: 'Satisfy', cursive;
-  color: #F11712;
+  color: #5D26C1;
   padding: 0;
   margin: 5px;
 }
  
 .details-title{
   font-family: 'Satisfy', cursive;
-  color: #F11712;
+  color: #5D26C1;
   padding: 0px;
   margin: 5px;
 }
@@ -61,7 +61,7 @@ h3.DevName {
 a {
   font-size: 15px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #b71c1c;
+  color: #5D26C1;
 }
 
 
