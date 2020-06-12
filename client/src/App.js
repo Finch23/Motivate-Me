@@ -72,7 +72,7 @@ class App extends Component {
   
 	  render() {
 		  return (
-			<Layout>
+			<Layout fixedHeader>
 				<div className="mdl-layout__content">
 					{ this.state.loggedIn && (
 		 				 <div>

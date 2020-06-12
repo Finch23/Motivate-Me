@@ -63,6 +63,16 @@ a {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #5D26C1;
 }
+.mdl-layout__header{
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+}
+@media screen and (max-width: 1024px)
+{
+.mdl-layout__header {
+    display: flex !important;
+} }
 
 
 
