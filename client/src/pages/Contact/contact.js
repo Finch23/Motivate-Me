@@ -53,7 +53,7 @@ class Contact extends Component {
                 <Cell col={12}>
                 {/*Jasmin Rowdy*/}
                 <Card shadow={5} style={{width: '580px', minWidth: '580px', margin: 'auto', borderRadius: '50px'}}>
-                    <CardTitle style={{color: '##000000', height: '230px', background: 'url(https://pbs.twimg.com/profile_images/1199098398206377984/oNR0wAjj_400x400.jpg)center /auto'}}> 
+                    <CardTitle style={{color: '##000000', height: '230px', background: 'url(https://avatars0.githubusercontent.com/u/58674083?s=460&u=be994ec86c3be372599765e7a2335353a0d95a79&v=4)center /auto'}}> 
                     </CardTitle>
 
                         <CardText> 
