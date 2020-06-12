@@ -30,7 +30,7 @@ const Nav = (props) => {
     <div style={{height: '100px'}}>
           <Header style={{ width:"100vw" }} className="header-color" title="Motivate Me" scroll>
           <div><img  className="logo" src={MMlogo2} alt="avatar-placeholder"></img></div>
-            <Navigation>
+            <Navigation >
               <Link to="/profile">Profile</Link>
               <Link to="/newgoal">My Goals</Link>
               <Link to="/quotes">My Videos</Link>
