@@ -1,14 +1,15 @@
 ## Motivate Me
 
 #### About:
-
-Motivate Me
-
+-------------------------------
 Motivate Me is an application that lets the user create an account and then log in. Once the user logs in, they can view randomly generated quotes, look up helpful videos based on input and create, modify and delete goals.
 
 ## Project Screen Shot(s)   
+![image](https://user-images.githubusercontent.com/58674083/84715507-a3d99400-af3e-11ea-958e-0e1aa019c808.png)
 
-<img src="https://i.ibb.co/H4Sbptd/screen-shot-2020-06-09-at-12-29-20-pm-1.png" alt="screen-shot-2020-06-09-at-12-29-20-pm-1" border="0">
+![image](https://user-images.githubusercontent.com/58674083/84715589-e4d1a880-af3e-11ea-91d0-9fb6f9c32540.png)
+
+![image](https://user-images.githubusercontent.com/58674083/84715685-2d896180-af3f-11ea-9bf6-227d01314137.png)
 
 ## Installation and Setup Instructions 
 
