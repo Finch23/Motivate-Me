@@ -33,7 +33,7 @@
     "express": "^4.17.1",
     "express-session": "^1.17.1",
     "if-env": "^1.0.4",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "mongoose": "^5.9.15",
     "morgan": "^1.10.0",
     "passport": "^0.4.1",
